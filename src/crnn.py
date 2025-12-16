@@ -1,0 +1,66 @@
+import torch
+from torch import Tensor, nn
+from torchvision.models import resnet18, ResNet18_Weights
+
+class CRNN(nn.Module):
+    def __init__(self, img_h: int, num_chars, device, dims: int = 256):
+        super().__init__()
+        self.height = img_h
+
+        self.device = device
+        
+        self.cnn = resnet18(weights=ResNet18_Weights.DEFAULT)
+        
+        cnn_dims = self._cnn_dims()
+        self.linear = nn.Linear(cnn_dims, dims)
+        self.drop = nn.Dropout(0.5) # ??
+        
+        self.rnn = nn.GRU(dims, dims // 2, bidirectional=True, num_layers=1, batch_first=True)
+        
+        self.projection = nn.Linear(dims, num_chars + 1)
+        
+        self.cross_entropy = nn.CrossEntropyLoss().to(self.device)
+    
+    def _cnn_dims(self):
+        # Width can be set to any resonable value
+        width, height = 1024, self.height
+        channel = 3 # Assuming RGB
+        dummy_input = torch.zeros(1, channel, height, width)
+        
+        return self._encode_part(dummy_input).shape[-1]
+    
+    def _encode_part(self, x):
+        x = self.cnn.conv1(x)
+        x = self.cnn.bn1(x)
+        x = self.cnn.relu(x)
+        x = self.cnn.maxpool(x)
+        x = self.cnn.layer1(x)
+        
+        # ???
+        x = x.permute(0, 3, 1, 2)
+        return x.view(x.size(0), x.size(1), -1)
+    
+    def encode(self, x):
+        x = self.linear(x)
+        x = nn.functional.relu(x) # ??
+        return self.drop(x)
+    
+    def forward(self, images, targets=None):
+        features = self.encode(images)
+        hiddens, _ = self.rnn(features)
+        
+        x = self.projection(hiddens)
+        
+        if targets is not None:
+            loss = self.nll_loss(x, targets, x.shape[1])
+            return x, loss
+        return x, None
+    
+    def nll_loss(self, x, targets, seq_len: int):
+        targets = self.pad_targets(targets, seq_len)
+        scalar = 20 # arbitrary multiplier, TODO: test different values
+        return self.cross_entropy(x.view(-1, x.shape[-1]), targets.contiguous().view(-1)) * scalar
+    
+    def pad_targets(self, targets: Tensor, seq_len: int): # ??
+        padding = (0, seq_len - targets.shape[1])
+        return nn.functional.pad(targets, padding, "consistant", 0)

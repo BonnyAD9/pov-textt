@@ -2,6 +2,9 @@
 
 import argparse
 
+import torch
+
+from src.crnn import CRNN
 from src.dataset import Dataset
 
 
@@ -20,7 +23,10 @@ def main():
 
     data = Dataset.parse_datasets(args.dataset)
 
-    print(Dataset.join_classes(data))
+    classes = Dataset.join_classes(data)
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    print(classes)
+    crnn = CRNN(72, len(classes), device).to(device)
 
 
 if __name__ == "__main__":
