@@ -24,3 +24,16 @@ class Dataset:
             )
 
         return data
+
+    def get_classes(self) -> set[str]:
+        classes = set()
+        for d in self.data:
+            classes |= d.get_classes()
+        return classes
+
+    @staticmethod
+    def join_classes(datasets: list["Dataset"]) -> set[str]:
+        classes = set()
+        for d in datasets:
+            classes |= d.get_classes()
+        return classes

@@ -2,7 +2,7 @@
 
 import argparse
 
-from .dataset import Dataset
+from src.dataset import Dataset
 
 
 def main():
@@ -19,6 +19,8 @@ def main():
     args = parser.parse_args()
 
     data = Dataset.parse_datasets(args.dataset)
+
+    print(Dataset.join_classes(data))
 
 
 if __name__ == "__main__":

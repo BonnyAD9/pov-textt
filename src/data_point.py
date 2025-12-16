@@ -24,3 +24,9 @@ class DataPoint:
 
         file.close()
         return data
+
+    def get_classes(self) -> set[str]:
+        classes = set()
+        for c in self.text:
+            classes.add(c)
+        return classes
