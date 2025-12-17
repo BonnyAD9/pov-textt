@@ -4,7 +4,9 @@ from torchvision.models import resnet18, ResNet18_Weights
 
 
 class CRNN(nn.Module):
-    def __init__(self, img_h: int, num_chars, device, dims: int = 256):
+    def __init__(
+        self, img_h: int, num_chars: int, device: torch.device, dims: int = 256
+    ):
         super().__init__()
         self.height = img_h
 
@@ -13,6 +15,7 @@ class CRNN(nn.Module):
         self.cnn = resnet18(weights=ResNet18_Weights.DEFAULT)
 
         cnn_dims = self._cnn_dims()
+        print(cnn_dims)
         self.linear = nn.Linear(cnn_dims, dims)
         self.drop = nn.Dropout(0.5)  # ??
 
@@ -32,7 +35,7 @@ class CRNN(nn.Module):
 
         return self._encode_part(dummy_input).shape[-1]
 
-    def _encode_part(self, x):
+    def _encode_part(self, x: Tensor) -> Tensor:
         x = self.cnn.conv1(x)
         x = self.cnn.bn1(x)
         x = self.cnn.relu(x)
@@ -43,12 +46,13 @@ class CRNN(nn.Module):
         x = x.permute(0, 3, 1, 2)
         return x.view(x.size(0), x.size(1), -1)
 
-    def encode(self, x):
+    def encode(self, x: Tensor) -> Tensor:
+        x = self._encode_part(x)
         x = self.linear(x)
         x = nn.functional.relu(x)  # ??
         return self.drop(x)
 
-    def forward(self, images, targets=None):
+    def forward(self, images: Tensor, targets=None):
         features = self.encode(images)
         hiddens, _ = self.rnn(features)
 
@@ -71,4 +75,4 @@ class CRNN(nn.Module):
 
     def pad_targets(self, targets: Tensor, seq_len: int):  # ??
         padding = (0, seq_len - targets.shape[1])
-        return nn.functional.pad(targets, padding, "consistant", 0)
+        return nn.functional.pad(targets, padding, "constant", 0)
