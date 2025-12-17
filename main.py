@@ -3,6 +3,7 @@
 import argparse
 
 from sklearn import metrics
+from rich.progress import track
 import numpy as np
 import torch
 from torch import Tensor, nn
@@ -58,7 +59,7 @@ def train(args):
     
     img_h = 64
 
-    train_loader, test_loader, test_original_targets, classes = Dataset.make_dataloader([data[2]], img_h, 1)
+    train_loader, test_loader, test_original_targets, classes = Dataset.make_dataloader([data[2]], img_h, 64, device)
     classes = np.insert(np.array(classes), 0, BLANK, axis=0).tolist()
     print(classes)
     
@@ -95,7 +96,7 @@ def train_fn(
     model.train()
     loss_sum = 0
 
-    for data in data_loader:
+    for data in track(data_loader, description="training"):
         dict_to_device(data, device)
 
         optimizer.zero_grad()

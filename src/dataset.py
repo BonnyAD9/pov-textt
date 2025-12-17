@@ -38,11 +38,11 @@ class Dataset:
         return classes
 
     @staticmethod
-    def make_dataloader(datasets: list["Dataset"], image_h: int, batch: int):
+    def make_dataloader(datasets: list["Dataset"], image_h: int, batch: int, device):
         images = []
         orig_targets = []
         for dataset in datasets:
-            for d in dataset.data[0:16]:
+            for d in dataset.data:
                 images.append(dataset.dir / "text_line_orig" / d.image)
                 orig_targets.append(d.text)
 
@@ -70,10 +70,12 @@ class Dataset:
         train_loader = torch.utils.data.DataLoader(
             train_dataset,
             batch_size = batch,
+            collate_fn = lambda x: collate_fn_padd2(x, device)
         )
         test_loader = torch.utils.data.DataLoader(
             test_dataset,
             batch_size = batch,
+            collate_fn = lambda x: collate_fn_padd2(x, device)
         )
 
         return train_loader, test_loader, test_orig_targ, encoder.classes_
@@ -84,6 +86,56 @@ class Dataset:
         for d in datasets:
             classes |= d.get_classes()
         return classes
+
+def collate_fn_padd(batch, device):
+    ## get sequence lengths
+    # lengths = torch.tensor([ t['images'].shape[0] for t in batch ]).to(device)
+    ## padd
+    images = [ torch.Tensor(t['images']).to(device) for t in batch ]
+    images = [torch.swapaxes(i, 0, 2) for i in images]
+    images = torch.nn.utils.rnn.pad_sequence(images)
+    images = images.permute(1, 3, 2, 0)
+
+    targets = [ torch.Tensor(t['targets']).to(device) for t in batch ]
+    targets = torch.nn.utils.rnn.pad_sequence(targets)
+
+    ## compute mask
+    # mask = (batch != 0).to(device)
+    return { "images": images, "targets": targets }
+
+def collate_fn_padd2(batch, device):
+    #  ## get sequence lengths
+    # lengths = torch.tensor([ t['images'].shape[0] for t in batch ]).to(device)
+    # ## padd
+    # batch = [ torch.Tensor(t['images']).to(device) for t in batch ]
+    # batch = torch.nn.utils.rnn.pad_sequence(batch)
+    # ## compute mask
+    # mask = (batch != 0).to(device)
+    # return batch, lengths, mask
+
+    batch.sort(key=lambda x: x["images"].shape[2], reverse=True)
+
+    images = [item["images"] for item in batch]
+    targets = [item["targets"] for item in batch]
+
+    widths = [img.shape[2] for img in images]
+    max_width = max(widths)
+
+    batch_size = len(images)
+    channels = images[0].shape[0]
+    height = images[0].shape[1]
+
+    padded_imgs = torch.zeros(batch_size, channels, height, max_width)
+
+    for i, img in enumerate(images):
+        w = img.shape[2]
+        padded_imgs[i, :, :, :w] = img
+
+    padded_targets = torch.nn.utils.rnn.pad_sequence(
+        targets, batch_first=True, padding_value=0
+    )
+
+    return {"images": padded_imgs, "targets": padded_targets}
 
 class ClassifyDataset(torch.utils.data.Dataset):
     def __init__(self, images, targets, resize_h = 64):
