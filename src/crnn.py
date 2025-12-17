@@ -1,6 +1,6 @@
 import torch
 from torch import Tensor, nn
-from torchvision.models import resnet18, ResNet18_Weights
+from torchvision.models import ResNet18_Weights, resnet18
 
 
 class CRNN(nn.Module):
@@ -23,7 +23,7 @@ class CRNN(nn.Module):
             dims, dims // 2, bidirectional=True, num_layers=1, batch_first=True
         )
 
-        self.projection = nn.Linear(dims, num_chars + 1)
+        self.projection = nn.Linear(dims, num_chars)
 
         self.cross_entropy = nn.CrossEntropyLoss().to(self.device)
 
@@ -59,7 +59,9 @@ class CRNN(nn.Module):
         x = self.projection(hiddens)
 
         if targets is not None:
-            loss = self.nll_loss(x, targets, x.shape[1])
+            # loss = self.nll_loss(x, targets, x.shape[1])
+            x = x.permute(1, 0, 2)
+            loss = self.ctc_loss(x, targets)
             return x, loss
         return x, None
 
@@ -72,6 +74,17 @@ class CRNN(nn.Module):
             )
             * scalar
         )
+
+    @staticmethod
+    def ctc_loss(x, targets):
+        size = (x.size(1),)
+        log_probs = nn.functional.log_softmax(x, 2)
+
+        input_len = torch.full(size, log_probs.size(0), dtype=torch.int32)
+        target_len = torch.full(size, targets.size(1), dtype=torch.int32)
+
+        loss = nn.CTCLoss(blank=0)(log_probs, targets, input_len, target_len)
+        return loss
 
     def pad_targets(self, targets: Tensor, seq_len: int):  # ??
         padding = (0, seq_len - targets.shape[1])

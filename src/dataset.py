@@ -1,12 +1,14 @@
 from pathlib import Path
 
-import torch
-# import albumentations
-from sklearn import preprocessing, model_selection
-from torch.utils.data import DataLoader
-from .data_point import DataPoint
 import numpy as np
+import torch
 from PIL import Image
+
+# import albumentations
+from sklearn import model_selection, preprocessing
+from torch.utils.data import DataLoader
+
+from .data_point import DataPoint
 
 
 class Dataset:
@@ -38,7 +40,9 @@ class Dataset:
         return classes
 
     @staticmethod
-    def make_dataloader(datasets: list["Dataset"], image_h: int, batch: int, device):
+    def make_dataloader(
+        datasets: list["Dataset"], image_h: int, batch: int, device
+    ):
         images = []
         orig_targets = []
         for dataset in datasets:
@@ -69,13 +73,13 @@ class Dataset:
 
         train_loader = torch.utils.data.DataLoader(
             train_dataset,
-            batch_size = batch,
-            collate_fn = lambda x: collate_fn_padd2(x, device)
+            batch_size=batch,
+            collate_fn=lambda x: collate_fn_padd2(x, device),
         )
         test_loader = torch.utils.data.DataLoader(
             test_dataset,
-            batch_size = batch,
-            collate_fn = lambda x: collate_fn_padd2(x, device)
+            batch_size=batch,
+            collate_fn=lambda x: collate_fn_padd2(x, device),
         )
 
         return train_loader, test_loader, test_orig_targ, encoder.classes_
@@ -87,21 +91,23 @@ class Dataset:
             classes |= d.get_classes()
         return classes
 
+
 def collate_fn_padd(batch, device):
     ## get sequence lengths
     # lengths = torch.tensor([ t['images'].shape[0] for t in batch ]).to(device)
     ## padd
-    images = [ torch.Tensor(t['images']).to(device) for t in batch ]
+    images = [torch.Tensor(t["images"]).to(device) for t in batch]
     images = [torch.swapaxes(i, 0, 2) for i in images]
     images = torch.nn.utils.rnn.pad_sequence(images)
     images = images.permute(1, 3, 2, 0)
 
-    targets = [ torch.Tensor(t['targets']).to(device) for t in batch ]
+    targets = [torch.Tensor(t["targets"]).to(device) for t in batch]
     targets = torch.nn.utils.rnn.pad_sequence(targets)
 
     ## compute mask
     # mask = (batch != 0).to(device)
-    return { "images": images, "targets": targets }
+    return {"images": images, "targets": targets}
+
 
 def collate_fn_padd2(batch, device):
     #  ## get sequence lengths
@@ -113,7 +119,7 @@ def collate_fn_padd2(batch, device):
     # mask = (batch != 0).to(device)
     # return batch, lengths, mask
 
-    batch.sort(key=lambda x: x["images"].shape[2], reverse=True)
+    # batch.sort(key=lambda x: x["images"].shape[2], reverse=True)
 
     images = [item["images"] for item in batch]
     targets = [item["targets"] for item in batch]
@@ -137,8 +143,9 @@ def collate_fn_padd2(batch, device):
 
     return {"images": padded_imgs, "targets": padded_targets}
 
+
 class ClassifyDataset(torch.utils.data.Dataset):
-    def __init__(self, images, targets, resize_h = 64):
+    def __init__(self, images, targets, resize_h=64):
         self.images = images
         self.targets = targets
         self.resize_h = resize_h
@@ -160,5 +167,5 @@ class ClassifyDataset(torch.utils.data.Dataset):
 
         return {
             "images": image,
-            "targets": torch.tensor(target, dtype=torch.long)
+            "targets": torch.tensor(target, dtype=torch.long),
         }

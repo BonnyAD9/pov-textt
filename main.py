@@ -1,20 +1,21 @@
 #!/usr/bin/python
 
 import argparse
+import copy
 
-from sklearn import metrics
-from rich.progress import track
 import numpy as np
 import torch
+from rich.progress import track
+from sklearn import metrics
 from torch import Tensor, nn
 from torch.optim import Optimizer
 from torch.utils.data import DataLoader
-import copy
 
 from src.crnn import CRNN
 from src.dataset import Dataset
 
 BLANK = "nada"
+
 
 def main():
     parser = argparse.ArgumentParser(
@@ -39,6 +40,13 @@ def main():
         type=int,
         help="Number of training epochs",
     )
+    train_parser.add_argument(
+        "-b",
+        "--batch",
+        default=64,
+        type=int,
+        help="Batch size used for training",
+    )
 
     run_parser = subparsers.add_parser(
         "run", help="Runs the CRNN model on given image"
@@ -56,19 +64,21 @@ def train(args):
     data = Dataset.parse_datasets(args.dataset)
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    
     img_h = 64
 
-    train_loader, test_loader, test_original_targets, classes = Dataset.make_dataloader([data[2]], img_h, 64, device)
+    train_loader, test_loader, test_original_targets, classes = (
+        Dataset.make_dataloader([data[2]], img_h, args.batch, device)
+    )
+
     classes = np.insert(np.array(classes), 0, BLANK, axis=0).tolist()
     print(classes)
-    
+
     crnn = CRNN(img_h, len(classes), device).to(device)
 
     optimizer = torch.optim.Adam(crnn.parameters(), lr=0.001)
 
     best_wts = copy.deepcopy(crnn.state_dict())
-    best_acc = 0.
+    best_acc = 0.0
 
     for epoch in range(args.epochs):
         train_loss = train_fn(crnn, train_loader, optimizer, device)
@@ -76,7 +86,7 @@ def train(args):
         preds, test_loss = eval_fn(crnn, test_loader, device)
         text_preds = []
         for p in preds:
-            text_preds.extend(decode_predictions(p, classes))
+            text_preds.extend(ctc_decode_predictions(p, classes))
 
         accuracy = metrics.accuracy_score(test_original_targets, text_preds)
         print(f"epoch {epoch} loss: {train_loss} accuracy: {accuracy}")
@@ -86,6 +96,7 @@ def train(args):
             best_wts = copy.deepcopy(crnn.state_dict())
 
     return best_wts
+
 
 def train_fn(
     model: nn.Module,
@@ -104,7 +115,7 @@ def train_fn(
         loss.backward()
         torch.nn.utils.clip_grad_norm_(model.parameters(), 5)
         optimizer.step()
-        loss_sum += loss
+        loss_sum += loss.item()
     return loss_sum / len(data_loader)
 
 
@@ -126,9 +137,7 @@ def eval_fn(model: nn.Module, data_loader: DataLoader, device: torch.device):
 def decode_predictions(
     predictions: Tensor, classes: list[str], pad_token: str = BLANK
 ) -> list[str]:
-    pred = torch.softmax(predictions, 2)
-    pred = torch.argmax(pred, 2)
-    pred = pred.detach().cpu().numpy()
+    pred = _prep_pred(predictions)
 
     texts = []
     for item in pred:
@@ -139,6 +148,33 @@ def decode_predictions(
                 text += classes[idx]
         texts.append(text)
     return texts
+
+
+def ctc_decode_predictions(
+    predictions: Tensor, classes: list[str], blank: str = BLANK
+) -> list[str]:
+    pred = _prep_pred(predictions.permute(1, 0, 2))
+
+    texts = []
+    for i in range(pred.shape[0]):
+        text = ""
+        batch_e = pred[i]
+
+        for cl in batch_e:
+            text += classes[cl]
+
+        text = text.split(blank)
+        text = [c for c in text if c != ""]
+        text = [list(set(c))[0] for c in text]
+        texts.append("".join(text))
+
+    return texts
+
+
+def _prep_pred(pred: Tensor):
+    pred = torch.softmax(pred, 2)
+    pred = torch.argmax(pred, 2)
+    return pred.detach().cpu().numpy()
 
 
 def dict_to_device(dic, dev: torch.device):
