@@ -30,7 +30,7 @@ class CRNN(nn.Module):
     def load(self, model: str):
         try:
             checkpoint = torch.load(model, map_location=self.device)
-            self.load_state_dict(checkpoint)
+            self.load_state_dict(checkpoint["model_state"])
         except Exception as e:
             print(f"Error loading pretrained model: {e}")
 

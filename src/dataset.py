@@ -137,19 +137,24 @@ class ClassifyDataset(torch.utils.data.Dataset):
         return len(self.images)
 
     def __getitem__(self, item):
-        image = Image.open(self.images[item]).convert("RGB")
+        image = prep_img(self.images[item], self.resize_h)
         target = self.targets[item]
-
-        if image._size[1] != self.resize_h:
-            w = self.resize_h * image._size[0] // image._size[1]
-            image = image.resize((w, self.resize_h))
-
-        image = np.array(image)
-        image = np.transpose(image, (2, 0, 1)).astype(np.float32)
-        image /= 255.0
-        image = torch.tensor(image, dtype=torch.float)
 
         return {
             "images": image,
             "targets": torch.tensor(target, dtype=torch.long),
         }
+
+
+def prep_img(file, res_h):
+    image = Image.open(file).convert("RGB")
+
+    if image._size[1] != res_h:
+        w = res_h * image._size[0] // image._size[1]
+        image = image.resize((w, res_h))
+
+    image = np.array(image)
+    image = np.transpose(image, (2, 0, 1)).astype(np.float32)
+    image /= 255.0
+    image = torch.tensor(image, dtype=torch.float)
+    return image
