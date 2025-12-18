@@ -71,12 +71,12 @@ class Dataset:
         train_dataset = ClassifyDataset(train_imgs, train_targ)
         test_dataset = ClassifyDataset(test_imgs, test_targ)
 
-        train_loader = torch.utils.data.DataLoader(
+        train_loader = DataLoader(
             train_dataset,
             batch_size=batch,
             collate_fn=lambda x: collate_fn_padd2(x, device),
         )
-        test_loader = torch.utils.data.DataLoader(
+        test_loader = DataLoader(
             test_dataset,
             batch_size=batch,
             collate_fn=lambda x: collate_fn_padd2(x, device),
@@ -124,6 +124,12 @@ def collate_fn_padd2(batch, device):
     images = [item["images"] for item in batch]
     targets = [item["targets"] for item in batch]
 
+    stride = 8
+    input_lengths = torch.tensor(
+        [img.shape[2] // stride for img in images], dtype=torch.long
+    )
+    target_lengths = torch.tensor([len(t) for t in targets], dtype=torch.long)
+
     widths = [img.shape[2] for img in images]
     max_width = max(widths)
 
@@ -141,7 +147,12 @@ def collate_fn_padd2(batch, device):
         targets, batch_first=True, padding_value=0
     )
 
-    return {"images": padded_imgs, "targets": padded_targets}
+    return {
+        "images": padded_imgs,
+        "targets": padded_targets,
+        "input_lengths": input_lengths,
+        "target_lengths": target_lengths,
+    }
 
 
 class ClassifyDataset(torch.utils.data.Dataset):
@@ -163,6 +174,7 @@ class ClassifyDataset(torch.utils.data.Dataset):
 
         image = np.array(image)
         image = np.transpose(image, (2, 0, 1)).astype(np.float32)
+        image /= 255.0
         image = torch.tensor(image, dtype=torch.float)
 
         return {

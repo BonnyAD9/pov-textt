@@ -42,6 +42,8 @@ class CRNN(nn.Module):
         x = self.cnn.maxpool(x)
         x = self.cnn.layer1(x)
 
+        x = self.cnn.layer2(x)
+
         # ???
         x = x.permute(0, 3, 1, 2)
         return x.view(x.size(0), x.size(1), -1)
@@ -52,7 +54,13 @@ class CRNN(nn.Module):
         x = nn.functional.relu(x)  # ??
         return self.drop(x)
 
-    def forward(self, images: Tensor, targets=None):
+    def forward(
+        self,
+        images: Tensor,
+        targets=None,
+        input_lengths=None,
+        target_lengths=None,
+    ):
         features = self.encode(images)
         hiddens, _ = self.rnn(features)
 
@@ -61,7 +69,7 @@ class CRNN(nn.Module):
         if targets is not None:
             # loss = self.nll_loss(x, targets, x.shape[1])
             x = x.permute(1, 0, 2)
-            loss = self.ctc_loss(x, targets)
+            loss = self.ctc_loss(x, targets, input_lengths, target_lengths)
             return x, loss
         return x, None
 
@@ -76,12 +84,14 @@ class CRNN(nn.Module):
         )
 
     @staticmethod
-    def ctc_loss(x, targets):
+    def ctc_loss(x, targets, input_len, target_len):
         size = (x.size(1),)
         log_probs = nn.functional.log_softmax(x, 2)
 
-        input_len = torch.full(size, log_probs.size(0), dtype=torch.int32)
-        target_len = torch.full(size, targets.size(1), dtype=torch.int32)
+        if input_len is None:
+            input_len = torch.full(size, log_probs.size(0), dtype=torch.int32)
+        if target_len is None:
+            target_len = torch.full(size, targets.size(1), dtype=torch.int32)
 
         loss = nn.CTCLoss(blank=0)(log_probs, targets, input_len, target_len)
         return loss

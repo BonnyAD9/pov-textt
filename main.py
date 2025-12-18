@@ -2,7 +2,9 @@
 
 import argparse
 import copy
+import itertools
 
+import Levenshtein
 import numpy as np
 import torch
 from rich.progress import track
@@ -14,7 +16,8 @@ from torch.utils.data import DataLoader
 from src.crnn import CRNN
 from src.dataset import Dataset
 
-BLANK = "nada"
+BLANK = "∅"
+# BLANK = "nada"
 
 
 def main():
@@ -78,7 +81,7 @@ def train(args):
     optimizer = torch.optim.Adam(crnn.parameters(), lr=0.001)
 
     best_wts = copy.deepcopy(crnn.state_dict())
-    best_acc = 0.0
+    min_cer = 1.0
 
     for epoch in range(args.epochs):
         train_loss = train_fn(crnn, train_loader, optimizer, device)
@@ -88,11 +91,17 @@ def train(args):
         for p in preds:
             text_preds.extend(ctc_decode_predictions(p, classes))
 
-        accuracy = metrics.accuracy_score(test_original_targets, text_preds)
-        print(f"epoch {epoch} loss: {train_loss} accuracy: {accuracy}")
+        for i in range(len(test_original_targets)):
+            print(test_original_targets[i], "->", text_preds[i])
 
-        if accuracy > best_acc:
-            best_acc = accuracy
+        accuracy = metrics.accuracy_score(test_original_targets, text_preds)
+        cer = get_cer(text_preds, test_original_targets)
+        print(
+            f"epoch {epoch} loss: {train_loss} acc: {accuracy} CER: {cer:.4f}"
+        )
+
+        if cer < min_cer:
+            min_cer = cer
             best_wts = copy.deepcopy(crnn.state_dict())
 
     return best_wts
@@ -151,22 +160,18 @@ def decode_predictions(
 
 
 def ctc_decode_predictions(
-    predictions: Tensor, classes: list[str], blank: str = BLANK
+    predictions: Tensor, classes: list[str]
 ) -> list[str]:
     pred = _prep_pred(predictions.permute(1, 0, 2))
 
     texts = []
+    blank_idx = 0
     for i in range(pred.shape[0]):
-        text = ""
-        batch_e = pred[i]
+        collapsed = [k for k, _ in itertools.groupby(pred[i])]
+        cleaned = [k for k in collapsed if k != blank_idx]
 
-        for cl in batch_e:
-            text += classes[cl]
-
-        text = text.split(blank)
-        text = [c for c in text if c != ""]
-        text = [list(set(c))[0] for c in text]
-        texts.append("".join(text))
+        text = "".join([classes[idx] for idx in cleaned])
+        texts.append(text)
 
     return texts
 
@@ -175,6 +180,18 @@ def _prep_pred(pred: Tensor):
     pred = torch.softmax(pred, 2)
     pred = torch.argmax(pred, 2)
     return pred.detach().cpu().numpy()
+
+
+def get_cer(preds: list[str], targets: list[str]) -> float:
+    total_dist = 0
+    total_len = 0
+
+    for pred, target in zip(preds, targets):
+        dist = Levenshtein.distance(pred, target)
+        total_dist += dist
+        total_len += len(target)
+
+    return total_dist / total_len if total_len > 0 else 0.0
 
 
 def dict_to_device(dic, dev: torch.device):
