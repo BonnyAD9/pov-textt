@@ -27,6 +27,13 @@ class CRNN(nn.Module):
 
         self.cross_entropy = nn.CrossEntropyLoss().to(self.device)
 
+    def load(self, model: str):
+        try:
+            checkpoint = torch.load(model, map_location=self.device)
+            self.load_state_dict(checkpoint)
+        except Exception as e:
+            print(f"Error loading pretrained model: {e}")
+
     def _cnn_dims(self):
         # Width can be set to any resonable value
         width, height = 1024, self.height

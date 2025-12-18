@@ -74,12 +74,12 @@ class Dataset:
         train_loader = DataLoader(
             train_dataset,
             batch_size=batch,
-            collate_fn=lambda x: collate_fn_padd2(x, device),
+            collate_fn=lambda x: collate_fn_padd(x, device),
         )
         test_loader = DataLoader(
             test_dataset,
             batch_size=batch,
-            collate_fn=lambda x: collate_fn_padd2(x, device),
+            collate_fn=lambda x: collate_fn_padd(x, device),
         )
 
         return train_loader, test_loader, test_orig_targ, encoder.classes_
@@ -93,34 +93,6 @@ class Dataset:
 
 
 def collate_fn_padd(batch, device):
-    ## get sequence lengths
-    # lengths = torch.tensor([ t['images'].shape[0] for t in batch ]).to(device)
-    ## padd
-    images = [torch.Tensor(t["images"]).to(device) for t in batch]
-    images = [torch.swapaxes(i, 0, 2) for i in images]
-    images = torch.nn.utils.rnn.pad_sequence(images)
-    images = images.permute(1, 3, 2, 0)
-
-    targets = [torch.Tensor(t["targets"]).to(device) for t in batch]
-    targets = torch.nn.utils.rnn.pad_sequence(targets)
-
-    ## compute mask
-    # mask = (batch != 0).to(device)
-    return {"images": images, "targets": targets}
-
-
-def collate_fn_padd2(batch, device):
-    #  ## get sequence lengths
-    # lengths = torch.tensor([ t['images'].shape[0] for t in batch ]).to(device)
-    # ## padd
-    # batch = [ torch.Tensor(t['images']).to(device) for t in batch ]
-    # batch = torch.nn.utils.rnn.pad_sequence(batch)
-    # ## compute mask
-    # mask = (batch != 0).to(device)
-    # return batch, lengths, mask
-
-    # batch.sort(key=lambda x: x["images"].shape[2], reverse=True)
-
     images = [item["images"] for item in batch]
     targets = [item["targets"] for item in batch]
 
