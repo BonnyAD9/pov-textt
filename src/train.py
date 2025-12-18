@@ -58,12 +58,12 @@ def train(args):
         print(
             f"epoch {epoch} loss: {train_loss} acc: {accuracy} CER: {cer:.4f}"
         )
-        torch.save(crnn.state_dict(), output_dir / "last.pt")
+        save_model(crnn.state_dict(), classes, output_dir / "last.pt")
 
         if cer < min_cer:
             min_cer = cer
             best_wts = copy.deepcopy(crnn.state_dict())
-            torch.save(best_wts, output_dir / "best.pt")
+            save_model(best_wts, classes, output_dir / "best.pt")
 
     return best_wts
 
@@ -153,6 +153,14 @@ def get_cer(preds: list[str], targets: list[str]) -> float:
         total_len += len(target)
 
     return total_dist / total_len if total_len > 0 else 0.0
+
+
+def save_model(state, classes, file):
+    checkpoint = {
+        "model_state": state,
+        "classes": classes,
+    }
+    torch.save(checkpoint, file)
 
 
 def dict_to_device(dic, dev: torch.device):

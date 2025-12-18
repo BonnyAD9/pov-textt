@@ -52,6 +52,15 @@ def main():
     run_parser = subparsers.add_parser(
         "run", help="Runs the CRNN model on given image"
     )
+    run_parser.add_argument(
+        "-i", "--image", help="Image to transcribe the text from"
+    )
+    train_parser.add_argument(
+        "-m",
+        "--model",
+        type=str,
+        help="Path to a pretrained model to resume training",
+    )
     # TODO
 
     args = parser.parse_args()
