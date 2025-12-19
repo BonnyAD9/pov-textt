@@ -109,11 +109,12 @@ def collate_fn_padd(batch, device):
     channels = images[0].shape[0]
     height = images[0].shape[1]
 
-    padded_imgs = torch.zeros(batch_size, channels, height, max_width)
+    padded_imgs = torch.ones(batch_size, channels, height, max_width)
 
     for i, img in enumerate(images):
         w = img.shape[2]
         padded_imgs[i, :, :, :w] = img
+    padded_imgs = 1 - padded_imgs
 
     padded_targets = torch.nn.utils.rnn.pad_sequence(
         targets, batch_first=True, padding_value=0
