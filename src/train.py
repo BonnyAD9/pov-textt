@@ -38,32 +38,34 @@ def train(args):
         crnn.load(args.model)
 
     optimizer = torch.optim.Adam(crnn.parameters(), lr=0.001)
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
+        optimizer, factor=0.8, patience=5
+    )
 
     best_wts = copy.deepcopy(crnn.state_dict())
-    min_cer = 2.0
+    min_acc = 0
 
     for epoch in range(args.epochs):
         train_loss = train_fn(crnn, train_loader, optimizer, device)
 
-        preds, _test_loss = eval_fn(crnn, test_loader, device)
+        preds, test_loss = eval_fn(crnn, test_loader, device)
         text_preds = []
         for p in preds:
             text_preds.extend(ctc_decode_predictions(p, classes))
 
-        # for i in range(len(test_original_targets)):
-        #     print(test_original_targets[i], "->", text_preds[i])
+        for i in range(min(len(test_original_targets), 5)):
+            print(test_original_targets[i], "->", text_preds[i])
 
-        accuracy = metrics.accuracy_score(test_original_targets, text_preds)
-        cer = get_cer(text_preds, test_original_targets)
-        print(
-            f"epoch {epoch} loss: {train_loss} acc: {accuracy} CER: {cer:.4f}"
-        )
+        accuracy = 1 - get_cer(text_preds, test_original_targets)
+        print(f"epoch {epoch} loss: {train_loss} acc: {accuracy}")
         save_model(crnn.state_dict(), classes, output_dir / "last.pt")
 
-        if cer < min_cer:
-            min_cer = cer
+        if accuracy < min_acc:
+            min_acc = accuracy
             best_wts = copy.deepcopy(crnn.state_dict())
             save_model(best_wts, classes, output_dir / "best.pt")
+
+        scheduler.step(test_loss)
 
     return best_wts
 
