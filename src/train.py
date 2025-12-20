@@ -6,7 +6,6 @@ import Levenshtein
 import numpy as np
 import torch
 from rich.progress import track
-from sklearn import metrics
 from torch import Tensor, nn
 from torch.optim import Optimizer
 from torch.utils.data import DataLoader
@@ -34,8 +33,13 @@ def train(args):
     print(classes)
 
     crnn = CRNN(img_h, len(classes), device).to(device)
+    max_acc = 0
     if args.model:
-        crnn.load(args.model)
+        checkpoint = torch.load(args.model, map_location=device)
+        crnn.load_state_dict(checkpoint["model_state"])
+        max_acc = checkpoint.get("acc", 0)
+
+    print(max_acc)
 
     optimizer = torch.optim.Adam(crnn.parameters(), lr=0.001)
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
@@ -43,7 +47,6 @@ def train(args):
     )
 
     best_wts = copy.deepcopy(crnn.state_dict())
-    max_acc = 0
 
     for epoch in range(args.epochs):
         train_loss = train_fn(crnn, train_loader, optimizer, device)
@@ -56,14 +59,14 @@ def train(args):
         for i in range(min(len(test_original_targets), 5)):
             print(test_original_targets[i], "->", text_preds[i])
 
-        accuracy = 1 - get_cer(text_preds, test_original_targets)
-        print(f"epoch {epoch} loss: {train_loss} acc: {accuracy}")
-        save_model(crnn.state_dict(), classes, output_dir / "last.pt")
+        acc = 1 - get_cer(text_preds, test_original_targets)
+        print(f"epoch {epoch} loss: {train_loss} acc: {acc}")
+        save_model(crnn.state_dict(), classes, acc, output_dir / "last.pt")
 
-        if accuracy > max_acc:
-            max_acc = accuracy
+        if acc > max_acc:
+            max_acc = acc
             best_wts = copy.deepcopy(crnn.state_dict())
-            save_model(best_wts, classes, output_dir / "best.pt")
+            save_model(best_wts, classes, acc, output_dir / "best.pt")
 
         scheduler.step(test_loss)
 
@@ -157,10 +160,11 @@ def get_cer(preds: list[str], targets: list[str]) -> float:
     return total_dist / total_len if total_len > 0 else 0.0
 
 
-def save_model(state, classes, file):
+def save_model(state, classes, acc, file):
     checkpoint = {
         "model_state": state,
         "classes": classes,
+        "acc": acc,
     }
     torch.save(checkpoint, file)
 
