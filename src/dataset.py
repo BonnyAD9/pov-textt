@@ -109,12 +109,12 @@ def collate_fn_padd(batch, device):
     channels = images[0].shape[0]
     height = images[0].shape[1]
 
-    padded_imgs = torch.ones(batch_size, channels, height, max_width)
+    padded_imgs = torch.zeros(batch_size, channels, height, max_width)
 
     for i, img in enumerate(images):
         w = img.shape[2]
         padded_imgs[i, :, :, :w] = img
-    padded_imgs = 1 - padded_imgs
+    padded_imgs = padded_imgs
 
     padded_targets = torch.nn.utils.rnn.pad_sequence(
         targets, batch_first=True, padding_value=0
@@ -157,5 +157,5 @@ def prep_img(file, res_h):
     image = np.array(image)
     image = np.transpose(image, (2, 0, 1)).astype(np.float32)
     image /= 255.0
-    image = torch.tensor(image, dtype=torch.float)
+    image = 1 - torch.tensor(image, dtype=torch.float)
     return image

@@ -43,7 +43,7 @@ def train(args):
     )
 
     best_wts = copy.deepcopy(crnn.state_dict())
-    min_acc = 0
+    max_acc = 0
 
     for epoch in range(args.epochs):
         train_loss = train_fn(crnn, train_loader, optimizer, device)
@@ -60,8 +60,8 @@ def train(args):
         print(f"epoch {epoch} loss: {train_loss} acc: {accuracy}")
         save_model(crnn.state_dict(), classes, output_dir / "last.pt")
 
-        if accuracy < min_acc:
-            min_acc = accuracy
+        if accuracy > max_acc:
+            max_acc = accuracy
             best_wts = copy.deepcopy(crnn.state_dict())
             save_model(best_wts, classes, output_dir / "best.pt")
 
