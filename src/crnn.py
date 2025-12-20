@@ -5,7 +5,11 @@ from torchvision.models import ResNet18_Weights, resnet18
 
 class CRNN(nn.Module):
     def __init__(
-        self, img_h: int, num_chars: int, device: torch.device, dims: int = 256
+        self,
+        img_h: int,
+        num_chars: int,
+        device: torch.device,
+        dims: int = 1024,
     ):
         super().__init__()
         self.height = img_h
@@ -73,9 +77,10 @@ class CRNN(nn.Module):
 
         x = self.projection(hiddens)
 
+        x = x.permute(1, 0, 2)
+
         if targets is not None:
             # loss = self.nll_loss(x, targets, x.shape[1])
-            x = x.permute(1, 0, 2)
             loss = self.ctc_loss(x, targets, input_lengths, target_lengths)
             return x, loss
         return x, None

@@ -84,8 +84,7 @@ def run(args):
     model.eval()
 
     image = prep_img(args.image, img_h)
-    image = image.unsqueeze(0)
-    image = image.to(device)
+    image = image.unsqueeze(0).to(device)
 
     with torch.no_grad():
         preds, _ = model(image)
