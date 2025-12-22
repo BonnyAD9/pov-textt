@@ -1,6 +1,7 @@
 import copy
 import itertools
 from pathlib import Path
+import shutil
 
 import Levenshtein
 import numpy as np
@@ -11,6 +12,7 @@ from torch.optim import Optimizer
 from torch.utils.data import DataLoader
 
 from src.crnn import CRNN
+from src.data_point import DataPoint
 from src.dataset import Dataset
 
 BLANK = "∅"
@@ -43,9 +45,14 @@ def train(args):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     img_h = 64
 
-    train_loader, test_loader, test_original_targets, classes = (
+    train_loader, test_loader, _, classes, unused = (
         Dataset.make_dataloader(data, img_h, args.batch, device)
     )
+    
+    unused_dir = output_dir / "unused"
+    unused_dir.mkdir(exist_ok=True)
+    for n, i in unused.items():
+        shutil.copy(i, unused_dir / (n + ".jpg"))
 
     classes = np.insert(np.array(classes), 0, BLANK, axis=0).tolist()
     print(classes)
@@ -67,17 +74,19 @@ def train(args):
     best_wts = copy.deepcopy(crnn.state_dict())
 
     for epoch in range(args.epochs):
-        train_loss = train_fn(crnn, train_loader, optimizer, device)
+        train_loss = train_fn(crnn, train_loader, optimizer)
 
-        preds, test_loss = eval_fn(crnn, test_loader, device)
+        preds, targets, test_loss = eval_fn(crnn, test_loader, device)
+        text_targets = []
         text_preds = []
-        for p in preds:
+        for p, t in zip(preds, targets):
+            text_targets.extend(t)
             text_preds.extend(ctc_decode_predictions(p, classes))
 
-        for i in range(min(len(test_original_targets), 5)):
-            print(test_original_targets[i], "->", text_preds[i])
+        for i in range(min(len(text_targets), 5)):
+            print(text_targets[i], "->", text_preds[i])
 
-        acc = 1 - get_cer(text_preds, test_original_targets)
+        acc = 1 - get_cer(text_preds, text_targets)
         print(f"epoch {epoch} loss: {train_loss} acc: {acc}")
         save_model(crnn.state_dict(), classes, acc, output_dir / "last.pt")
 
@@ -95,14 +104,11 @@ def train_fn(
     model: nn.Module,
     data_loader: DataLoader,
     optimizer: Optimizer,
-    device: torch.device,
 ):
     model.train()
     loss_sum = 0
 
     for data in track(data_loader, description="training"):
-        dict_to_device(data, device)
-
         optimizer.zero_grad()
         _, loss = model(**data)
         loss.backward()
@@ -117,14 +123,14 @@ def eval_fn(model: nn.Module, data_loader: DataLoader, device: torch.device):
     with torch.no_grad():
         sum_loss = 0
         preds = []
+        targets = []
 
         for data in data_loader:
-            dict_to_device(data, device)
-
             batch_preds, loss = model(**data)
             sum_loss += loss.item()
             preds.append(batch_preds)
-        return preds, sum_loss / len(data_loader)
+            targets.append(data["orig_targets"])
+        return preds, targets, sum_loss / len(data_loader)
 
 
 def decode_predictions(
@@ -185,8 +191,3 @@ def save_model(state, classes, acc, file):
         "acc": acc,
     }
     torch.save(checkpoint, file)
-
-
-def dict_to_device(dic, dev: torch.device):
-    for key, value in dic.items():
-        dic[key] = value.to(dev)

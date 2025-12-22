@@ -6,7 +6,7 @@ from PIL import Image
 
 # import albumentations
 from sklearn import model_selection, preprocessing
-from torch.utils.data import DataLoader
+from torch.utils.data import DataLoader, RandomSampler
 
 from .data_point import DataPoint
 
@@ -43,7 +43,15 @@ class Dataset:
     ):
         images = []
         orig_targets = []
+        unused = {}
         for dataset in datasets:
+            # Randomly choose one datapoint that will not be used in the
+            # training from each dataset.
+            idx = np.random.randint(0, len(dataset.data))
+            unused[dataset.dir.name] = dataset.dir / "text_line_orig" / dataset.data[idx].image
+            dataset.data[idx] = dataset.data[-1]
+            dataset.data.pop()
+            
             for d in dataset.data:
                 images.append(dataset.dir / "text_line_orig" / d.image)
                 orig_targets.append(d.text)
@@ -67,20 +75,22 @@ class Dataset:
         )
 
         train_dataset = ClassifyDataset(train_imgs, train_targ)
-        test_dataset = ClassifyDataset(test_imgs, test_targ)
+        test_dataset = ClassifyDataset(test_imgs, test_targ, test_orig_targ)
 
         train_loader = DataLoader(
             train_dataset,
             batch_size=batch,
             collate_fn=lambda x: collate_fn_padd(x, device),
+            shuffle=True,
         )
         test_loader = DataLoader(
             test_dataset,
             batch_size=batch,
             collate_fn=lambda x: collate_fn_padd(x, device),
+            shuffle=True,
         )
 
-        return train_loader, test_loader, test_orig_targ, encoder.classes_
+        return train_loader, test_loader, test_orig_targ, encoder.classes_, unused
 
     @staticmethod
     def join_classes(datasets: list["Dataset"]) -> set[str]:
@@ -93,6 +103,7 @@ class Dataset:
 def collate_fn_padd(batch, device):
     images = [item["images"] for item in batch]
     targets = [item["targets"] for item in batch]
+    orig_targets = [item["orig_targets"] for item in batch]
 
     stride = 8
     input_lengths = torch.tensor(
@@ -119,18 +130,20 @@ def collate_fn_padd(batch, device):
     )
 
     return {
-        "images": padded_imgs,
-        "targets": padded_targets,
-        "input_lengths": input_lengths,
-        "target_lengths": target_lengths,
+        "images": padded_imgs.to(device),
+        "targets": padded_targets.to(device),
+        "input_lengths": input_lengths.to(device),
+        "target_lengths": target_lengths.to(device),
+        "orig_targets": orig_targets,
     }
 
 
 class ClassifyDataset(torch.utils.data.Dataset):
-    def __init__(self, images, targets, resize_h=64):
+    def __init__(self, images, targets, orig_targ=None, resize_h=64):
         self.images = images
         self.targets = targets
         self.resize_h = resize_h
+        self.orig_targ = orig_targ
 
     def __len__(self):
         return len(self.images)
@@ -138,10 +151,12 @@ class ClassifyDataset(torch.utils.data.Dataset):
     def __getitem__(self, item):
         image = prep_img(self.images[item], self.resize_h)
         target = self.targets[item]
+        orig_targets = self.orig_targ[item] if self.orig_targ is not None else None
 
         return {
             "images": image,
             "targets": torch.tensor(target, dtype=torch.long),
+            "orig_targets": orig_targets,
         }
 
 

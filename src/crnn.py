@@ -64,6 +64,7 @@ class CRNN(nn.Module):
         targets=None,
         input_lengths=None,
         target_lengths=None,
+        orig_targets=None,
     ):
         features = self.encode(images)
         hiddens, _ = self.rnn(features)
