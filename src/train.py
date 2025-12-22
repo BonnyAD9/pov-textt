@@ -20,13 +20,31 @@ def train(args):
     output_dir = Path(args.output)
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    data = Dataset.parse_datasets(args.dataset)
+    data_dict = Dataset.parse_datasets(args.dataset)
+    data = [
+        data_dict["1"],
+        data_dict["2"],
+        data_dict["3"],
+        data_dict["6"],
+        data_dict["8"],
+        data_dict["9"],
+        data_dict["10"],
+        data_dict["12"],
+        data_dict["13"],
+        data_dict["14"],
+        data_dict["16"],
+        data_dict["17"],
+        data_dict["19"],
+        data_dict["20"],
+        data_dict["21"],
+        data_dict["22"],
+    ]
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     img_h = 64
 
     train_loader, test_loader, test_original_targets, classes = (
-        Dataset.make_dataloader([data[2]], img_h, args.batch, device)
+        Dataset.make_dataloader(data, img_h, args.batch, device)
     )
 
     classes = np.insert(np.array(classes), 0, BLANK, axis=0).tolist()
