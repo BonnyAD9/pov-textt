@@ -1,4 +1,9 @@
+#show link: underline
+
 = Automatic Text Transcription (OCR)
+
+Trained model and all sources are available in github repository at
+#link("https://github.com/BonnyAD9/pov-textt")[BonnyAD9/pov-textt].
 
 == Task definition
 
