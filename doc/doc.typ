@@ -114,29 +114,57 @@ with the way we had to edit the dataset, which will be described later. In
 general it was able to predict, but in some cases when the writing was distinct
 enough from the writings in the dataset, it started to struggle.
 
-For example this text model predicted as "Ahoy, jak se áš.", which is quite
+For example this text model predicted as "Ahůz, jak se máš.", which is quite
 close, but it's not perfect.
 
 #figure(
     image("assets/line1.jpeg"),
-    caption: [Image containing text: "Ahoj, jak se máš?"]
+    caption: [Handwritten text: "Ahoj, jak se máš?"]
 )
 
 Or this text, where model didn't make that many mistakes, but it changed it
-enough for it to be difficult to understand: "Hello wcld, cursino wores?".
+enough for it to be difficult to understand: "Hello aecrld, cursiv wores?".
 
 #figure(
     image("assets/line2.jpeg"),
-    caption: [Image containing text: "Hello world, cursive works?"]
+    caption: [Handwritten text: "Hello world, cursive works?"]
 )
 
-And in some cases the model was really far from the correct prediction: "Sts
-shed o8 Branssudeou".
+And in some cases the model was really far from the correct prediction: "kus vs
+teds o kranuptesr-".
 
 #figure(
     image("assets/line3.jpeg"),
-    caption: [Obrázek obsahující text: "This is test of transcription."]
+    caption: [Handwritten text: "This is test of transcription."]
 )
+
+The dataset mostly contained text in cursive. Because of this, non cursive text
+works much less than text in cursive. The predicted text is "Žest na lextu
+pšaném tiskadm.".
+
+#figure(
+    image("assets/line4.jpg"),
+    caption: [Handwritten text: "Test na textu psaném tiskacím."]
+)
+
+On the other hand, the model has learned to transcribe text quite well with the
+handwriting from the dataset. The following image comes from the original
+dataset and has not been used in the training in any way and yet the model
+predicts the text quite well as: "z 3 milionů na 1/4 Milionu, každý atcivnáš
+dostane místo" even though I have hard time reading it myself.
+
+#figure(
+    image("assets/line5.jpg"),
+    caption: [Handwritten text: "z 3 milionů na 1 1/2 milionu, každý akcionář
+        dostane místo"]
+)
+
+Overall the model has learned quite well to recognize text in the handwriting
+that it has been trained on. On the other hand, it has problems recognizing
+different handwritings. This is propably because handwriting of different
+people differs a lot and the training dataset doesn't contain enough different
+handwritings for the model to learn the general features of different letters
+well enough.
 
 == Evaluation results
 
@@ -159,4 +187,17 @@ managable length.
 For evaluation we used the already mentioned CER metric. We ran the training
 for 100 epochs, after which model with the largest accuracy given by the CER
 metric was selected. The accuracy was measured on the testing dataset. Our
-best model reached accuracy of $94.5%$.
+best model reached accuracy of $94.6%$ in epoch $74$.
+
+Progress of the model during the training may be seen in the following plots
+that show how loss and accuracy changes during training:
+
+#figure(
+    image("assets/loss-plot.png", width: 95%),
+    caption: [Log scale plot showing how loss changed during training.]
+)
+
+#figure(
+    image("assets/acc-plot.png", width: 95%),
+    caption: [Plot showing how accuracy changed during training.]
+)
