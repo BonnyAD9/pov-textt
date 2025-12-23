@@ -4,4 +4,5 @@ __pycache__
 /.ruff_cache
 /train
 /train[1-9]*
-train*.tar.gz
+*.tar.gz
+*.zip
