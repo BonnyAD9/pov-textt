@@ -18,14 +18,14 @@ line of text).
 === Tesseract-OCR
 
 Tesseract-OCR is OCR engine by Google. It is available either as command line
-application, or python library (pytesseract). It uses many moder techniques
+application, or python library (pytesseract). It uses many modern techniques
 including _long short term memory_. The model can be trained on custom data and
-there also exist pretrained model. The model supports many languages.
+there also exists pretrained model. The model supports many languages.
 
 === Pero-OCR
 
 Pero is OCR engine that can be used to detect and transcribe text in images. It
-can detect paragraphs and lines of text and than transcribe the the text in the
+can detect paragraphs and lines of text and then transcribe the the text in the
 image. It was mostly trained on european handwritten texts, mostly czech. It is
 available as command line application and python module.
 
@@ -108,9 +108,9 @@ Firstly we need to decode the model outputs to the actual predicted text using
 CTC decoder. It select the class with the highest probability, merges repeated
 characters and removes blank symbols. Then we were able to calculate the
 Character Error Rate based on the Levenshtein distance between the predicted
-text and the target text. This allows for more better accuracy metric, since
-normal accuracy would increase only when all the characters in the prediction
-are correct, which is quite rare considering the length of the text lines.
+text and the target text. This allows for better accuracy metric, since normal
+accuracy would increase only when all the characters in the prediction are
+correct, which is quite rare considering the length of the text lines.
 
 == Experiments
 
