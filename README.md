@@ -10,7 +10,8 @@ you should download it from the above link.
 
 ## Usage
 
-To start training the model, you can run:
+To start training the model, you can run (note that the dataset is expected
+to be in the same format as the dataset from Pero mentioned above):
 
 ```bash
 ./main.py train -d path/to/dataset
@@ -21,12 +22,12 @@ existing model. The training is automatically stored to the output folder,
 which you can also set:
 
 ```bash
-./main.py train -d path/to/dataset -e 67 -b 32 -m path/to/model -o output/path
+./main.py train -d path/to/dataset -e 67 -b 32 -m model.pt -o output/path
 ```
 
 If you want to transcribe a text, all you need is the trained model and image
 you want to transcribe. This will print out the predicted text:
 
 ```bash
-./main.py run -i path/to/image.jpg -m path/to/model
+./main.py run -i path/to/image.jpg -m path/to/model.pt
 ```
