@@ -1,0 +1,703 @@
+['∅', ' ', '!', '"', '%', "'", '(', ')', ',', '-', '.', '/', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ':', ';', '=', '?', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '[', ']', '`', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '|', '°', 'Á', 'Í', 'Ó', 'Ú', 'Ý', 'ß', 'á', 'ä', 'é', 'í', 'ó', 'ö', 'ú', 'ü', 'ý', 'ć', 'Č', 'č', 'Ď', 'ď', 'ě', 'ň', 'Ř', 'ř', 'Š', 'š', 'ť', 'ů', 'Ž', 'ž', '—', '“', '”', '„']
+1024
+0
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:07:29
+si přes 50 milionů životů - z toho 27 miliónů lidí padlo na frontách, zbytek -> š přřes 5 nitibnů žipotřív 2 toho 27 milnř 11dí padbo pa proutách, zbytik
+je, aby mi ten hrnec dali na vaření. Ochotně mi hrnec dali a -> je, aby mi ten orvnec ddti na vuření, Pehotně ni hrne dáli or
+tům v národních výborech a ve společenských organizacích plnit toto usne- -> třím v várbdnísk výborech a ve spokčlrskrých oroanízačíoh ptnit toto nsne.
+vytřasení snídaně, dnes odpadá. -> vytřasdví svídáně, dres odfadáí.
+V tomto školním roce bylo vyučování podle naší -> Vtut skolín zoce tfo zřivíác podle Mní
+epoch 0 loss: 2.269099161863327 acc: 0.7786856972940827
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:03:44
+dvinkou a jedním sluhou (nebožtíkem Chlandou, krejčím z Brna) -> dvimkosu a ředním sluhou (meloštíkem chlandou, krejeím z Brma) -
+čistoty v okolí stavby. Za pomoc při plnění úkolů -> čistoty v oholí stavby. Za pomoc pří plnění víholů -
+šich posic uvolňujeme. Kamarádi, -> šich posic uovolňujeme. Kamarádě,-
+palubě čístit. Skutečně když jsem psál měsíc prosinec -> pochubi čístí t. Skodčně když jsem psál měsíc promež -
+ků ze 43. 10 žáků se přihlásilo ke studiu -> ků ze 48. 1V řáků, se přihlávilo ke studin -
+epoch 1 loss: 0.533985464811325 acc: 0.8444721974427595
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:04:53
+na středoevropského času na čas východoevropský byla uskutečněna ve 2 -> na středoevropského Kasu na čas východvevropský byla nskutečněna ve2
+které se mělo odbývati zýtra ve tři hod. tedy -> které ce měho odbývati zrýtra ve kří hod. Nedy
+Tebe, a mezi nimi fotografii Vás všech, kterou jsi mi poslala k naroze- -> Teve, a mezi nimi potograpi Nás všech, klenou jsi mi poslala slnaroze
+v příkopu ve kterém stále tekla voda, takže kumys byl hezky -> vpříkopu ve kterém stále tekla voda, takže kamys byl hezky
+SSSR tajemník krajsk. výboru Svazu čs.-sov. -> SSSK trjemník krajsk výbou svazu čs- sov.
+epoch 2 loss: 0.3412859007716179 acc: 0.8918822479928635
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:58
+Do služby jsme přišli od 12. - 4. hod v noci, služba -> Do služly jsme přišlod 12 - 4 hod snoci, sluzla
+telé 17, na úpravě okolí školy žáci -> telé 17, na sípraně skolé škaly žácí
+Po té byla diskuse ve které s. Řezanka poukazuje na počet provinění a to že -> Po té byla diskuse ve které s Řezanka poukuzuje na počet provinění a to že
+za zadní stranou silniční posici kočár, v něm 3 polní četnici -> za zadni stranor silnic poiicí kočár, v něm 3polní četnici
+[: přísahala miláčkovi -> [příšahata miláčkoví
+epoch 3 loss: 0.26172716104984284 acc: 0.904038061254832
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:03:23
+provazu. Voda tekla prudce a hnala je na druhý břeh. Když jich -> provazu. Poda tekla prudce a hnala je na drulý břeh. Když jich
+tam následkem utrpení a hladu zůstalo. Při procházce z města -> tam následkem utrpení a hladu zůstalo. Při prochaáce z měsla
+zdůrazněn význam únorových událostí -> zdůrozněn význam únorových událost
+Dnes jsme dojedli sekanou, zítra dojíme buchtu, díru Vám -> Dres jsme dožedli Sekanovu, 2í tra dojsme buchle, dí sá
+jsme byli s nakládáním hotoví a zakotvili jsme -> jsme byli a nakládánám hotoví a rakotvěli jsme
+epoch 4 loss: 0.21314648628234864 acc: 0.9123401724650609
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:30
+na tvrdohlavce jako lék. Byl z něho strach. -> na tordohlavce jako lék. Byl z ného ctrach.
+nechybí hlásíl jsem že jsou všichni nastoupení. -> nechjlí holásíl jsem že pou všickni nastoupení
+Jednotlivé provozovny: 01 - Dačice (kovo), 02- Jindř. -> Jednolivé provozovny: O1 - Dočice,(kvo), O2 -Jindř.
+maždění a žasl jsem co tady bylo zajatců. Zašel jsem dále do houfu vidím samé -> maždění a žasl jsm co tady bylo zajatců. Zašel jsem dále do honfu vidím samé
+já prožil, neboť zápisky v kalendářích, -> já prožil, neboť zápisky v kalendářích,
+epoch 5 loss: 0.17706186971068383 acc: 0.9144335414808207
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:03:10
+kolových vozech připraveny. Pro mne, že prý mám silného koně -> ko lových vozech při praveny. Pro mne, že prý mám silnéhokoně
+Také jsme jeli jednu sobotu do Pra- -> Také jsme jeti jedmu sototu ddo Pra -
+vyprávěli, že to není mouka nýbrž šrot a že i ten je zkažený zapařený -> vyprávěli, žeto není mouka nýbrž šrot a žei ten je zkazenýzapare
+vdyť život plný krasných snů, -> vdyť řivot plný krasných snů,
+radosti, regiment k Marziai nejde, právě tamhle dole -> radost, regiment R Marzici nejdl, pravě tamhle dole
+epoch 6 loss: 0.15289306485652923 acc: 0.9202973535533749
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:36
+ještě z práce doma; jeho paní nás přívětivě uvítala -> ještě z práe doma; jeho paní nás přívělivě uvítala
+Špatně se zaselo a hlavně se nemohly okopaniny zasázet. Velké množství -> Špatuč se zaselo a hlavně se nemohly okopaniny sasázet. Velké množství
+a všichni je dobře zvládli. Nejvíce si oblí- -> a všichni je dobře zobídi. Nojvice si chí-
+V budoucnu se počítá též se zřízením -> V budouenu se poítá též se žřúzením
+žáků je přihlášeno na vyuku náboženství 22 -> žáků je přitlíšeno va vyuku nábožestí 22
+epoch 7 loss: 0.13262271386384963 acc: 0.928016651798989
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:46
+Po té byla diskuse ve které s. Řezanka poukazuje na počet provinění a to že -> Po té byla diskuse ve které s. Řezanka poukazuje na počet provinění a to že
+němž - bohužel zatím jen v myšlenkách - -> něž - bohujel zatím jen v myšlenkách-
+královská snídaně. Celý vagon voněl česnekem. Další naší -> královoká snídaně. Celý vagon voněl česnekem. Další naš
+vlak a nás připojili na záď k němu a za 20 minut jsme jeli. -> vlak a nás připojili na záď k němu a za 20 minml jsme jeli
+radovali se, že nám nebe popřálo vstoupit -> radověli se, že nám nebe popřálo vstoupit
+epoch 8 loss: 0.11661858850717545 acc: 0.9249003865596194
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:03:10
+ma chorá duše víc se nevyléčí. -> ma chorá duše víc se nevyléčí.
+marmeládou a hlavně každý den za 2 kopejky rozinek -> marmeládou a hlavně každý den za 2 kopejky rozinek
+jen kdybych věděla -> jen kdybych věděla
+V hájí kvetou konvalinky -> V hájí kvetou konvalinky
+vyšel si mysliveček čekal na srnu -> vyšel si mysliveček čekal na srnu
+epoch 9 loss: 0.11052170220017433 acc: 0.928302111210229
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:39
+Bylo dosti sýčku, Ku cti poddůstojníkům i -> Bylo dosti sýčku, ků cti poddstojníkům i
+ostatní 2 byli zabiti a 3 měli od bedýnek rozbitá žebra, takže museli -> ostatní 2 byli zabiti a 3 měli od bedýnek rozbitá žebra, takže museli
+velkomyslní platili všecko. Nejhorší bylo, že jsme nemohl -> valkomy Pní plotěli věceko. N s horší bola, že jsme ne muostl
+Jak by to jednou dopadlo, pověděl pěšákům oblíbený tehdy -> Jak by to jednou dodadli, pověděl pěšákm oblbeny, tetky
+VI. A na něm zlatými slovy: -> V1. A na něm zlatými slovy:
+epoch 10 loss: 0.09124077492952347 acc: 0.9289562890276539
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:28
+největšího pořádku. Asi okolo 8. hod. ráno jsme -> největšího pořádku. Asi okolo 8. hod ráno jsme
+kramfleky sve šlisovat. -> kram(leky sve šlisovat
+Nechoď můj mily z večera domu -> Nechoď můj mily z večera domu
+asi nerozuměla, Bůh ví, co chtěli - -. A tak nastal den jedenáctého, o němž -> ae zerozuměla, Důh ví, co cetěli - - A tak nastal den jedenáchého, oněnž
+maždění a žasl jsem co tady bylo zajatců. Zašel jsem dále do houfu vidím samé -> mažděí a žasl jsem co tady bylo zajatců. Zašel jsem dále do honfu vidím samé
+epoch 11 loss: 0.08145923286676407 acc: 0.9289800773119239
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:31
+měsíce informuje čtenáře o místních spole- -> měsíce informuje čtenáří o místních spole-
+S příchodem jara, kdy se příroda probouzí k no- -> Š příchodem jara, kdy se příroda probouscí k no-
+, shledav vše v pořádku jeli jsme k přístavišti -> „zhledav vše v pořádku jeli jsme k přístaviušli
+Městě učitelka mateřské školy Jaro- -> Městě učitelka mateřské školy Jaro-
+2. října mělo J. Z. D. Netolice na ukončení žní obžinky. Dopoledne byla schůze a odpo- -> 2. řijna mělo J. Z. D. Netolice na ukončení žní obžinky. Dpoledne byla schůze a odpos
+epoch 12 loss: 0.073900563955307 acc: 0.9248884924174844
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:03:00
+dle určeného cíle, až konečně jsme našli. -> dle úrčeného ále, už konečně jsme našli.
+SSSR tajemník krajsk. výboru Svazu čs.-sov. -> SSSR tajemník krajsk výbou svazu čs- sov.
+Pokud rodiče se nemohli dostavit na určitý -> Pohad rodiče se nemotli dostavit na ervičn,
+Dozvěděl jsem se, že šéf Dr Haas dostal dopis -> Dozvěděl jsem se, že šef Dr Haas dostal dopis-
+měl úředník ONV, který však pěkný úřední projev -> měl úředník ONV, který však pěkný úřední projev
+epoch 13 loss: 0.0699043053984642 acc: 0.9325364258102884
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:59
+jenské služby učitel Otto Kovář a na jeho -> jenské služby učitel Utto Kovář a na jeho
+vagonem. Ti chlupatí na prsou měli je zaškrané až do masa. -> vagonem. Ti chlupati na prsou měli je zaštrané až do masa.
+jim nechali a 3. září odešli jsme přes Ba- -> jim nechali a 3. září odešli jsme přes Ba-
+V předních zákopech v 1 metr. hloubce již přýštěla voda a proto jsme -> V předních zákopech v 1 metr. hloubce již příštěla voda a proto jsme
+I. Kde že mám pevně pluh s -> II. Kde že mám pevně pluh s-
+epoch 14 loss: 0.05183541945368052 acc: 0.9353315492120131
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:13
+také jednou za noc zbuzen, abych topil a dával pozor. Bylo to nepříjemné -> také jednou za noe zbuzen, abych topil a dával pozor. Bylo to nepříjemné
+ninám. Mou radost si nepřestavíš. Zapomněl jsem na všecky svízele. -> ninám Mou radoslt si nepředstavíš. apomněl jsem na všecty vízele.-
+a řezali kámen. Kamený útvar krásného kamene byl podzemí v -> a řezali kámen. KHamemý útvar krásného kamene byl podzemi v
+občané vysvětlili, že musíme jíti zpět odkud jsme vyšli a pak se dáť -> občané vysvětlili, že musíme jítí zpět odkud jsme vyšli a pak se dáť
+šich posic uvolňujeme. Kamarádi, -> šich posic uvoluujeme. Kamarádi,
+epoch 15 loss: 0.041570780150592325 acc: 0.9366874814154029
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:23
+palmy zelené, oranže na stromech a všelijaké -> palmy zelené, oranže na stromech a všelijeské
+S ostatními pak jako hradba -> S ostatními pak jako hradba
+Je to vysoký, krásný voják, snědý, jihoslovanského typu -> Je to vysoký, krásný voják, snědý, jihoslovanského typu
+Vyprovodim Tě přes háj zelený -> Vyprovodim Tě přes hkáj zelený
+pro občanské záležitosti v roce 1984. Kladně byly hodnoceny tyto akce - ročně se -> pro občanstž zálžipyli v roce 1984. Kladnébyly hodnoceny tyto akce - rocně se
+epoch 16 loss: 0.03676785560697317 acc: 0.9365685399940529
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:15
+a připraví ji na jaro. Jednoho dne, obyčejně to bývá -> a připraví ji na jaro. Jednoho dne, obyčejněto bývá
+Při nástupu rusů schovali se v zákopech až rusi přešli vylezli a z celým -> Při nástupu rušu schovali se v zá kopech až rusi přešli vylezli a z alym
+chytil jeden známý mladík a chtěj nechtěj -> chytěl jedem známý mladík a chtěj nechlý
+dělení! Když tu není jediného místeč- -> dělení! Když tu není jediného místeč-
+V měsících únoru až dubnu byl na všech -> V měsících únoru až dubnu byl na všech
+epoch 17 loss: 0.035131047405302526 acc: 0.9329884032114184
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:36
+jsem doma. Žádné dlouhé rozpaky. Obraz, -> jsem doma. Žádně dlouhé rozpaky. Araz,
+půlku chleba. Fasovali jsme svíčky, abych prý si konservy v zákopech -> půlku chleba. Tasovali jsme svíčky, abych prý si konservy v zákoped,
+Sylvestr roku 1917 začal hned ráno -> Sylvestr roku 1917 začal hned ráno
+nemohl nohu vytáhnout a tak stěstí, že jsem měl nůž uřízl jsem řemínek -> nemohl nohu vytáhnout a tak stěstí, že jsem měl nůž uřízl jsem řemínek
+4.) Vorgang bei Schlissen und Füllen der Kessel? -> 4.) Vorgangbci Schlisnen und Tříkn da Kesel:
+epoch 18 loss: 0.03670917899906635 acc: 0.9330002973535534
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:15
+v poli, má dostat 14 dní. Teď jenom nevím, jsem-li v poli. Garni- -> v poli, má dostat 14 dní. Teď jenom nevím, jsem- li v poli garm-
+vali. Čela tolik zachmuřená za posled- -> vali. Čela tolik zachuneřená za posled-
+Městě učitelka mateřské školy Jaro- -> Městě učitelka mateřské školy Jaro-
+12. srpna začaly žně v J. Z. D. Netolice. Veškeré obilí se seče kom- -> 12. srpna začaly žně v J. Z D. Netolice. Veškeré obilí se seče koma
+lékárník do Zvorníku pro poštu - byl 5 dní na cestě - a přivezl Tvůj balík -> lékáník do Zvoníku pro poštu - byl 5 vdní na cestě - a přivyl Tvůj bakích
+epoch 19 loss: 0.04148007488250732 acc: 0.9321796015462385
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:43
+bylo to 8. prosince 1914 a trochu mrzlo. Jdu se za ním podívat -> bylo to orajhnm ásvn ouda a trochu mrzlo. Jdu se za ním podívat
+třetí týden vypínán elektrický proud. -> třetí týden vypínán elektrický proved.
+pokračují opravy školních budov Horní a Švermova ul. Vlastní příjmy MěNV -> pokračují opravy školních budov Horní a Svermova nl. Vlastní příjmy MěNV
+Slyš, ó drahý, slavík pěje -> Syžó drahý slavík pěje
+Když večer k jasným hvězdičkam se tiše dívám, -> Když večer k jasný m h vězdičkam se tiše dívám,
+epoch 20 loss: 0.026498501595109702 acc: 0.9340707701457033
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:40
+další dny byl sběr skoro na celé plantáži měli jsme hezkou podívanou. -> další dny byl sběr skoro, na celé plantáži měli jsme kezkou podívanou.
+Heller zmizel z řečniště jako sražený. -> Hehler zmizel z řečníště jako oražený,
+vzdychali jeden za druhým, neboť jsme už -> vzdychali jeden za druhým, neboť jsme už-
+Na mém hrobě státi bude -> Na mém hrobě státi bude
+napřed naší hymnu a pak anglickou. -> napřed naši hymnu u pak anglickou.o
+epoch 21 loss: 0.019281500894576312 acc: 0.9381385667558727
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:28
+Zahájeno bylo starostou obce, přítomné a hosty poté -> Zahájeno bylo starostou obce, přítomné a hosty poté
+podívat na Kozí Hrádek - místo, kde -> podívat na Kozírádek - msto, kde
+proto prý, aby se všichni „potřební“ mohli -> proto prý, aby se všichni „potřební mohli
+Já na to. Chodí do ohrady řemeslníci každý si veme, potom ptácí -> Já na to. Chodí do ohrady řemeslnici každý siveme, potom ptáčí
+Slavíček jest malý ptáček. -> Slavíček jest malý ptáček.
+epoch 22 loss: 0.021902703680098057 acc: 0.9402557240559025
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:16
+přistát. Jak jsme zastavili přijel nám -> přostát. Jak jsme zastavili přijel nám
+ra a vystřeleny byly světlice. -> ra a vystřeleny byly světlice.
+cích poněkud nemocen. Napomínal jsem -> cích poněkud nemocen. Napomínal jsem
+u silnice a pod ním navezen návoz. -> u siůnice a pod ním navezen návoy.
+miti světu, že také on bude pokračovat -> miti světu, že také on bude pokračovat
+epoch 23 loss: 0.023675568848848343 acc: 0.9330002973535534
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:15
+Větřík chladný už prý věje, -> Větřík chladný už prý věje,
+Následující text je především pohledem na to, jak -> Následující teet je především pohleden na to, jak
+St. Daniele ani tu nenašli jsme cukr -> S. Daniele ani tu nenešli jsme cukr
+nám podařilo tak bychom tu vojnu lépe a bez rizika přeckali. -> nám podařilo tak bychom to vojnu lépe a bez ryzika přeckali.
+si vydělal a Inž. že se mohl nahoře vytáhnout se sucharami -> si vydělal a Inž. že se mohl nahoře vytáhnout se sucharami
+epoch 24 loss: 0.01902263807877898 acc: 0.9374487065120428
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:21
+tu je stále velmi čilá. Zvláště čilá je -> tu je stále velmi čilá. Zvláště čilá je
+přijeli do Žitomíru. Byly zde ohromné skladiště všech potřeb -> přijeli do Zitomíru. Byly zde ohromné skladiště všech potřeb
+má, že k pluku vrátil se již jeho „milá- -> má, že k pluku vrátil se již jeho „milá-
+kovcová, ve 2. tř. nár. šk. Vítězslava -> kovcová, ve 2. tě. nár. šk. Vátězslava
+sáhla. Předseda OV SSM Vlastimil Neuman zdůraznil, že získat mladé li- -> sáhla. PŘedseda OV SSM Vlastimil Nemman zdůraznil, že získat mladě 1-
+epoch 25 loss: 0.019417349364608528 acc: 0.9381623550401428
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:15
+byl jeho otec lesním dělníkem. Vyučil se ma- -> byl jeho otec lesním dělníkem. Vyučil se ma-
+již skoro měsíc. Za tu dobu jsme se neměli kdo umýt jen sněhem, -> již skoro měsíc. Za tu dobu jsme se neměli kdo umýt jen sněhem.
+vroubených jedlými kaštany, které právě do- -> vroubených jedlými kaštany, které právě do-
+žádná dlouhá doba. Čekalo se na vlak až půl dne. Přijel osobní -> žádná dlouhá doba. Čekalo se na vlak až půl dne. Přijel osobní
+byli namačkáni jako slanečci v soud- -> byli namačkáni jako slanečci v soud-
+epoch 26 loss: 0.01485295631736517 acc: 0.9425988700564971
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:12
+Na mém hrobě státi bude -> Na mém hrobě státi bude
+val jen to nejcenější. Vše ostatní zůstalo voj- -> val jen to nejeznější. Vše statní zůstalo voj--
+byli seznámeni s přípravou k obraně vlasti a jaké ochrany použít před -> byli seznámeni z přípravou k obraně vlasti a jaké ochrany použít před
+Na středisko Dačice okresní správy silnic v Jin- -> Na středisko Dačice okresní správy silnic v pie-
+nými též p. Jana Valacha, leante. úředníka ze Skržic, pocházejíc z příbuzné nám -> nými též p. Sana Valacha, bank úředníka ze Škrřic, pocházejíc v přibuzné mám
+epoch 27 loss: 0.011036789858713746 acc: 0.9383288730300328
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:34
+já a Všetečka češí do 10. hod. Předně jsme šli k -> já a Vselečka češí do 10. hod. Předně jsme šli k
+práci nějak rozčlenil. Chci především zachytiti -> práci nějak rozčlenil. Chci především zachylit
+kácí se do příkopu naplněného vodou -> kácí se do příkopu napluěného vodou
+zlikvidována a upravena pro dopravní -> zlievidována a upřovena pro dopravní
+sté některé zemědělské závody a průmyslové podniky, besedovali se čle- -> sté některé zemědétské závody a průmyslové podniky, besedovali se čle-
+epoch 28 loss: 0.010514177465811372 acc: 0.9369372584002379
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:15
+I. Včera se zas moje milá, -> Včera se zas moje milá,
+srovnávali dřívější vybavenost školy s dneš- -> sroméveli dívější vytavenost školy s duš-
+Na středisko Dačice okresní správy silnic v Jin- -> Na středisko Dačice okresní správy silnic v Jir-
+se modlili a plakali. Nějak nás bolela hlava. Slunce pálilo tak, že -> se modlili a plakali. Nějak nás bolela hlava. Slunce pálilo tak že
+duchu vyučování ve 3. třídách. A to bychom -> duchu yučování veí třídích. A to byctom
+epoch 29 loss: 0.01379021542519331 acc: 0.9370918822479929
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:15
+Mnoho trní musí býti, -> Mnoho tní munsí býti,
+břehu mořském. Kopce co jsem spatříl na -> břehu mořském. Kopce co jsem spatřil na
+U stroje jsme museli být už -> U stroje jsme museli být ní
+p. Turková a pokladí p. Jevíčková. -> p. PTeckná a poklodá p. Jeníčtová.
+Bystřice stává se platným úřední ná- -> Bystřice stává se platným úřed ní ná-
+epoch 30 loss: 0.012981147760525346 acc: 0.9384240261671127
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:16
+který jsme dostali na vánoce od německého červeného kříže v Lodži. -> který jsme dostali na vánoce od německého červeného kříže v Lodži.
+lířem Teršem vystoupily v plné boha- -> lířem teršem vystoupily v plné boha-
+a na výroční schůzi Svazu požární ochrany (SPO) -> a na výroční schůzi Svazu požární ochrany (SPO)
+Tys, Velky duchu, tvůrcem, ale -> Tys, Velky duchu, tvůrcem, ale
+velkým poučením, přitažlivým impulsem -> velkým poečeněm, přitažlivým inypculsem
+epoch 31 loss: 0.012171706536784769 acc: 0.9342610764198632
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:16
+byli uvázání a celou noc hekali -i-á. Ráno když bylo již světlo, teprve -> byli uvázaní a celou noc hekali - i -á. Ráno když bylo již světlo, teprve
+Narodil se 12. listopadu 1906 ve Vídni. Vystudo- -> Narodil se 12. listopadu 1906 ve Plídni. ly studo-
+já se do obchodu nedostanu a za půl hodiny budou obchody zavřeny. -> já se do obchodu nedostanu a za půl hodiny budon obchody zavženy.
+Tvář plá mu jak růže na šípku -> Svář plá mu jak raže na řípku
+pumpě a museli jsme se řádně omýt. Zatím vojáci co náš transport -> pempě a museli jsme se řádně omýt. Zatím vojáci co náš transport
+epoch 32 loss: 0.00906367963179946 acc: 0.9395777579542075
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:21
+do hor. Kazaši jedou na koni. Manželky a děti na velbloudech. Viděl -> do hor. Kazaši jedou na koni. Manželky a děti na velbloudech. Viděl
+20. dubna večer byla v sále Mě. N. V. Netolice beseda o sociálním vlastnictví a o -> 2e dubna večer byla v sále Mě. N. V. Netolice beseda o sociálním vlastnictví a o
+me však času pro stálé nástrahy a pře- -> me však času pro stálé nástrahy a pře-
+plášti ale přišli; stav byl asi 36 mužů, přitomno nejvyše -> plásti ale přišli; stav byl asi 36 mužu, přitono nejvýší
+poslední zmírá sten. -> poslední zmírá sten.
+epoch 33 loss: 0.006773967721499503 acc: 0.9351769253642581
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:15
+Kčs. Průměrný vklad na sporožirovém účtu je 3.124 Kčs, -> Kčs. Průměrný vklad na sporožirovém účko je 3.124 Kčs,
+dí a požírá. Při půjčování jeho do domů -> dí a požírá. Při půjčování jeho do domů
+a všichni je dobře zvládli. Nejvíce si oblí- -> a všichni je dobře zobídli. Nojvice si ohlí-
+Slyš, ó drahý, slavík pěje -> Slyšó drahý slavík pěje
+dny, poněvadž jsme měli protivítr. -> dny poněvadž jsme měli protivíte,
+epoch 34 loss: 0.00701222758833319 acc: 0.9394707106749925
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:38
+jsem za silným smrkem až to přestane. Asi za 1/4 hodiny -> jsem za silným smrkem až to přestane. Asi za 1/4 hodiny
+Herr Hauptmann lassen Sie ruhen! na setníkův povel -> fHevr Hauptuvu lassen Si ruhen! na setníkůs povel
+dobně jako v ostatních místech v re- -> dobně jako v ostatních místech v ne-
+lehce ranění. Vážnější poranění byli uvnitř a nebo v čes. realce za nemocnici promě- -> léhe ranění. Váčnojší poranění byli uvnitř a nebo v čes. redlce za nemocnici promě-
+chyně k 11. hodině dopolední byla porušena -> chyně k 11 hodině dopolední byla porušena
+epoch 35 loss: 0.00592675028834492 acc: 0.9388165328575676
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:20
+však zprávy nás velice pobourili když jsme se dozvěděli a německé noviny -> však zprázy nás velice pobouzili když jsme se dozvěděli a německé noviny
+výstroj. Ze svých prostředků si sbor zakupuje vycházkové -> výstroj. Ze svých prostředtů si sbor zakupuje vycházková
+vyjeli zase do širého moře směrem k městu -> vyjeli zase došrého moře směrem k městu
+lavát takže jsme si ani nemohli uvařit čaj ze sněhové vody. -> lavat takže jsme si ani nemohli uvařit čaj ze sněhové vody.
+zpívány národní písně. A tak od tohoto roku jest první květen svátkem nejen -> zpívány národní písně. A tak od tohoto raku jedt první kvtem svátkem nejen
+epoch 36 loss: 0.008800084403716027 acc: 0.9380553077609277
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:31
+v kaverně schouleni v klubíčka. Já, -> v kaverně schouleni v klubíčka. Já,
+la naším hostem po celou dobu vánoč- -> la naším hostem po celou dobu vánoč-
+jako sůl a kdybychom s ním byli vyrukovali, nebyl by dostal žádný nic- -> jako sil, a kdybychem s ním byli vyrukovali, nebyl by dostal žádný aie -
+ze života pionýrů. Žáci předvedli hru -> ze života pionýrů. Žáci předvedli hru
+otevřena nová noclehárna ve městě na -> otněna nová nocleháma ve městě na
+epoch 37 loss: 0.007817386236041784 acc: 0.9384240261671127
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:14
+zastupoval jej místopředseda Josef Smitka. -> zastupoval jej místopudseda JosefSmitka.
+sokolském a od dvou sokolů a pak na všecky -> sokolském a od dvou sokolůz pak na všecky
+Zde nás zle pronásledovali skokani, -> Zde nás zlé pronásledovali skokani,
+právě k obědu s kterým nás již dobrá paní -> právě k obedu s kterým nás již dobrá paní
+nám podařilo tak bychom tu vojnu lépe a bez rizika přeckali. -> nám podařilo tak bychom to vojnu lépe a bez ryzika přeckali.
+epoch 38 loss: 0.005521810291334987 acc: 0.9418495391019923
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:24
+Tu není divu, že jsme se mohli pomi- -> Tu není divu, že jsme se mohli pomi-
+od muziky k muzice -> od muziky k muzice
+Batailoniskommando Tagsbefehl für den 5/V 1908. -> Batailovnskommando Tajsbefehl, tív den Bě,1908
+Srbska, kde vojákuje u Landsturmu - E- -> Srbska, kde vojákuje u Landsturmu - 6.-
+General zdraví salutováním, pozorujeme jakousi slovní -> General zdavní salutováním, pozorujeme jakouši slovní
+epoch 39 loss: 0.005405782573856413 acc: 0.9406006541778175
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:15
+Za celý den nebylo nic nového, jenom že celý -> Za celý den. nebylo nic nového, jenom še selý
+domyslili a něco ukazovali a šlo všecko. -> domeplili a něco ukázovali a šlo všecko.
+by dluh oplatil. Po delším spolužítí jsme poznali, že největší podfu- -> by dluh oplatil. Do delším spolužití jsme poznali, že nejšštší podfu
+hned ve vycházkových čepicích, botech, někteří ve svých -> hned ve vycházkových čepicích, botech, někteří ve vvých
+československým na věky! Vítaj! Tvo- -> československým na věky! Vítaj! To-
+epoch 40 loss: 0.004636772650294006 acc: 0.9447873922093369
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:16
+stup soutěžících požárníků nezanechal valného dojmu. -> ztup soutěžících požárníků nezanechal valného dojmu.
+práce československo-sovětského přátelství, jichž je v okrese 78. na okresní -> práce československo-sovětského přátektví, jicůž je v okrese 78. Na okresní
+Zrovna tak bylo dnes rok, když jsme jeli ze Zavlavy. První -> Zrovná tak byla dnes rok, když jsme jeli ze zavlaky. První
+do našeho okresu. Při té příležitosti navštívil n. p. Liva a besedoval se -> do našeho okresi. Při tě příležitosti navštívil n.p. tira a besedoval se
+porculánem, peřinami a různými dra- -> porculánem, peřinami a různými dra-
+epoch 41 loss: 0.004086222720798105 acc: 0.9416473386856973
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:31
+žalář asi na 4 dny, ale přece nám neudělíl -> zaláž asi na k dy, ale přece nám neudělil
+neb v ranní hodině -> neb v ramní hodině
+gutani, špinaví a zarostlí k nepoz- -> gutani, špinavé a garostlí k nepoz-
+a dva dny mi utekli jako voda, jenom že -> a dva dny mi utekli jako voda, jenom že
+hujeme bluzu. Vida; kulička, které bývaly veli- -> hujeme bluzu. Vida,j;kulička, které bývaly veli-
+epoch 42 loss: 0.0037775937411934136 acc: 0.9414332441272674
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:21
+nebo téměř žádnou, pomohla škole při různých -> neto témi žádnou, pomohho škole při nůných
+stálých deštů vyváželi a domu vozili po malých troškách; do jednoho vozu -> tálých deště vyváželi a domu vozili po malých troškách; do jednoho vozu
+sjezdu strany na 24. březen 1986. Na posledním rozšířeném zasedání OV KSČ byly -> sjezdu strany na 24. březen 1986. Na posledním rozšířeném zasedění OV KSČ byly
+Byl připřáhnut s koněm Zezulovým do jeho vozu a odejel i jeho čeledí- -> Byl připřáhnut s koněm čezulovým do jeho vozu a odejel i jeho řeledí-
+Přemíčkovi děkuji za krásnou kresbu, kterou mi tu -> Přemíčkovi děkuji za krásnou Kresbu, kterou mi tu
+epoch 43 loss: 0.004636805349495262 acc: 0.9420874219446922
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:13
+Kčs. Průměrný vklad na sporožirovém účtu je 3.124 Kčs, -> Kčs. Průměrný vklad na sporožirovém účku je 3. 1234 Kčs,
+radosti, regiment k Marziai nejde, právě tamhle dole -> radosti, reginment k Marzici nejdl právě tamhle dole
+V tu chvíli jsem skákal aspoň 1 metr vysoko radostí. Laďa hned pojď -> V tu chvíli jsem skákal aspoň 1 metr vysoko radostí. Lada hned pojď
+práci nějak rozčlenil. Chci především zachytiti -> práci nějak rozčlenil. Chci především zachylití
+o niž krásné mladé sny -> o niž krásné mladé sny
+epoch 44 loss: 0.0032551216199062766 acc: 0.9417305976806423
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:15
+a že pojede do taškentu k vůli tomu. Při té příležitosti vezmu -> a že pojede do taškentu k vůli tomu. Příté příležitosti vezmu,
+Setrval s námi v družné zábavě až do 4 -> Setrval s námi v družné rábavě až do 4
+vou prachu. Tedy jistě tu už pěkných -> vou prachu. Tedy jistě tu už pěkmých
+ustavičná myšlenka, ale bál jsem se o tom s Milotou mluvit, -> ustavičná myslenka, ale bál jsem se o hom s Milotou mluvit,
+této osady velmi zámožný. Odešel při ústu- -> této osady velmi zámožný. Odešel při ústu-
+epoch 45 loss: 0.0025988364168442785 acc: 0.9431578947368421
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:39
+v úhlu asi 75°. Najednou mocné trhnu- -> v úhlu asi 75. Najednou mocné trhnu-
+se, že poranila i kost a vyšla ven. Tedy tak -> se, že poranila i kost a vyšla ven. Tedy tak
+V budoucnu se počítá též se zřízením -> V Budoucnu se počítá též se zřízením
+Pepouškovi namázni nosík hlavně uvnitř lojem (kup si ho tabulku u -> Pepouškovi namázni nošík htavné uvnitů bojerm (Kuji si to takulku u
+zlikvidována a upravena pro dopravní -> zlřávidována a upřevena pro dopravní
+epoch 46 loss: 0.002579377326183021 acc: 0.9410526315789474
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:18
+le I. praporu. Pokud jsme mohli nahléd- -> le I. praporu. Pokud jsme mohli nahlé d-
+praporu darován prapor. Časopis „V boj“ -> praporu darován prapor. Časopis „V boj
+jsme těch zkušeností ještě neměli. Ovšem vojna nám byla protivná -> jsme těch zkušenosti ještě neměli. Ovšem vojna nám byla protioná
+Ráno vstavše posnídali a šli ke stroji. U stroje jsme -> Ráno vstavše posnídali a šlike stroji. U strose jm
+ustavičná myšlenka, ale bál jsem se o tom s Milotou mluvit, -> ustavičná myslenka, ale bál jsem se o hom s Milotou mluviti,
+epoch 47 loss: 0.003327277321834117 acc: 0.9428129646149271
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:25
+na chleba a do polní láhve mi nalil kávu. Já jsem nebyl nějak moc -> na chleba a do polní láhve mi nalil kávu. Já jsem nebyl nějak moc
+opravám školy - jednak byla předělaná -> opraván školy - jednak byla předělaná
+a svijí se jak přemožené zvíře, -> a svijí se jak přemožené zvíře,
+Tys se na mě zamračila -> Tys se na mě zamračila-
+ani 2 hodiny. Souhlasil jsem a vrátil jsem se do chalupy a on pokračoval -> ani 2 hodiny. Souhlasil jsem a vrátil jsem se do chálupy a o pokračoval
+epoch 48 loss: 0.003225609977263957 acc: 0.9387332738626226
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:31
+Tento „americký brouk“, který měl naru- -> Těnto „americký brouk“, který měl naru-
+ocenění. V rámci okresu je v současné době využívá- -> vcenění. V rámci okrese je v současné době využívá-
+ství, které je od nás zpět utábořeno. Hlásí -> ství, které je od nás zpět utábořeno. Hlásí
+IV. ročníku. Písemné zkoušky se kona- -> III. ročníku. Písemné zkoušky se kona-
+Ja ve snách místo Anjela -> Ja ve snách místo Anjela
+epoch 49 loss: 0.003035962370922789 acc: 0.9378412132024978
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:25
+Slavnostního aktu se zúčastnil ved. taj. OV KSČ J. Maňák, podnikový ředitel -> Slavnostního aktu se zúčastnil ved. Haj. OV KSČ J. Maňák, podnikorý ředitel
+Teď teprve nastala zábava; každá dívka si -> Teďtepe nastala zátna, Koažea dívka ai
+snad nechtějí rušit jejich -> snad nechtějí rušit jejich
+nou, vysadily zde růže a okrasné stromy (hlohy). -> nou, vysadily zde růže a okrasné stromy (hlohy).
+lém roce pouze 2 byty. Zahájena byla výstavba 48 -> tém roce pouze 2 byly. Zahájenu byla výstavba 48
+epoch 50 loss: 0.0026006661935243755 acc: 0.9422182575081772
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:51
+Konečně troubené marše, Kalamajky se nikdy nezpívají, to jen -> konečně troutené marše, kalamajky sk nikdy nezpívají, to jen
+a krupobití jsou tu častým hostem, nás ni- -> a krupobití jsou tu častým hostem, nás ni-
+Vídně), kromě nich turistická noclehárna -> Vídně), kramě nich turistická nclehárna
+za tohodle vězně prosíl našeho velitele aby mu -> za lohodle věžně provsíl našeho velitele caeby mu
+kteří se na nás dívali a dávali nám chleba a bílé bulky což nám -> kteří se na nás dívali a dávali nám chleba a bílé bulky což nám
+epoch 51 loss: 0.002246990199200809 acc: 0.9408861135890574
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:14
+me však času pro stálé nástrahy a pře- -> me však času pro stálé nástrahy a pře-
+ten kdo rád pije ať se nežení. -> Jen kdo rád pije ať se nežření.
+zpěv jeho vábíl uši -> zpěv jeho vábíl uši
+Na štěstí seno nebylo daleko. Zdejší horalé se dávají do velké a vysoké -> Na štěští seno nebylo daleko. Zdejší horalé seno dávají do velké a vysoké
+Celková výstavba jeslí si vyžádala částku 657.600 Kčs. -> Celková výstavbu jeslí si vyžádala částku 65 7.600 Kčs.
+epoch 52 loss: 0.00245910998666659 acc: 0.9402676181980375
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:22
+zasloužilým učitelem. Diplom s medailí byl mu pře- -> zasloužilým učitelem. Diplom s medailí byl mu pře-
+Celý den skoro spál. Dnes jsem byl celý den -> Celý den skoro spát. Dnce jsem byl selý de
+ČSAD Čes. Budějovice - závod Humpolec - provoz 25 Dači- -> ČSAO Čes. Budějovice -závod Humpolec - provoz 25 Dači-
+v sobotu 3. srpna 1968 konference všech šesti socialistic- -> v sobodu 3. rpna Né08 konference všech šesti vocielistc.
+Celková výstavba jeslí si vyžádala částku 657.600 Kčs. -> Celková výstavbu jeslí si vyžádala částku 65 7.600 Kčs.
+epoch 53 loss: 0.002228899968089536 acc: 0.9415759738328873
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:26
+jeden druhému tak jako v Sokole, -> jeden druhému tak jako v Sokole,
+divizi která je v Karpatech. Z naší posice jsme odpochodovali zpět -> divizi která je v parpatech. Z naší posice jsme odpochodovali zpět
+zasloužilým učitelem. Diplom s medailí byl mu pře- -> zasloužilým učitelem. Diplom s medailí byl mu pře-
+I. Kde že mám pevně pluh s -> II. Kde že mám pevně pluh so
+Celý den skoro spál. Dnes jsem byl celý den -> Celý eden skoro spát. Dnce jsem byl celý de
+epoch 54 loss: 0.002199750068364665 acc: 0.9405411834671424
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:15
+kulturního střediska, do Prachatic jsme jez- -> kulkacního střediska, do Pruchalic jsme jez-
+Jaroslava Selková, který dojíždí z Prachatic. -> Jarovlnm Selkon, která dojíždí z Prachate.
+Události z této cesty počaté dne 27/x přes Dolomity -> Události z této cesty počáté dne 271X přes Dolamnity
+sadem. V sadě stál pomník generála Kaufmanna, -> sadem. V sadě stál pomník generála Kaufmamna,
+Byli hladoví, ustrašení, utýraní ale neřekli -> Byli hladovu, ustrašení, utýraní ale neřekli
+epoch 55 loss: 0.0018657057399395854 acc: 0.943681236990782
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:16
+ke Zvorníku, že jsou Srby odříznuty. Že to ohromné skladiště, které -> Zle zroníku, že jsou srby odříznuty. že to ohromné skladiště, které
+jsem zajatce který by touto chorobou neonemocněl a byl proti ní -> jsem zajatce který by touto cchorobou neonemocněl a byl proti ni
+den, pak přicházeli i mimo a zajímali -> den, pak přicházeli i mmimo a Bajímalž
+Domnívali se, že však neskončí s úspěchem. -> Domnívali se, že však neskoučí s úspěchem.
+děti křík je tryzeň, -> děti křík je tryzeň,
+epoch 56 loss: 0.00150361492857337 acc: 0.9413024085637823
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:23
+na ni lístkem, na jablíčka, zda již na -> na ni lístkem, na jablíčka, zda již na
+kde přistát a my jsme byli zakotvení v moři. -> kde půstát a my jsme byli zakotvení v moři.
+zastavím se teď v kostele, poděkovat Bohu, že jsem živ a zdráv, a poprosit, -> zastavím se teď v kostele, pooděkovat kolu, že jsem živ a zdráv, a poprosit,
+Pozdrav Tě Bůh pane kaprál - -> Pozdrav Tě Bůh. pane kaprál
+platili dluhy, daně a jiné. - -> Šti dluhy, daně a jiné. -
+epoch 57 loss: 0.0017856465205550193 acc: 0.9423966696402022
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:25
+Odjezd byl stanoven na duben 1917. Tito emisaři na základě -> Ojezd byl stanoven na duben 1917. Tito Emizaři na základě
+Zda se smí když hvězdy planou -> Zala se smí když pvězdy planou
+z něj usušeného sena. Dvakrát za měsíc se otázkou sklizně zabývá rada MěNV. Úko- -> zněj usušeného sena. Drakrát za měsíc se odázkou sklizné zabývá rada MěNV. Ako-
+dostatek místa jsme k sobě přitlačeni -> dostatěk místa jsme k sobě přitlašeni
+hádejte děvčata co on měl rád?!! -> kádejte devčata co on měl rád?!!
+epoch 58 loss: 0.0020567407397320495 acc: 0.9423847754980672
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:15
+asi 20 km od hranic před městem Asiago. -> asi 20 km od hranic před městem Asiag0.
+rozkaz jíti ku předu. Ano, ale jak? Postu- -> rozkaz jíti ku předu. Ano, ale jak? Potu-
+Gobyová-Bláhová přeloženi na kraj České -> Gobyová - Bláhová přeloženi na kraj Česke
+Vzhledem k tomu, že na poslední -> Vkhledem k tomu, že na poslední
+cíle a náš dopravní prostředek opuštíme. -> cíle a náš dopravní prostředek opuštáme.
+epoch 59 loss: 0.0019031908495817334 acc: 0.944014272970562
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:15
+Za krásného a klidného večera -> Za krásného a klidného večena
+rozzářených očí neviděl jsem od začátku -> rozzářených očí neviděl jsem od začátku-
+za tohodle vězně prosíl našeho velitele aby mu -> za lohodle věžně provsíl našího velitele caeby mu
+byly záplavy. Bylo to znát v přírodě jak se následkem tepla začíná probouzet. -> byly záplavy. Bylo to znát v přírodě jak se následkem tepla začíná probouzet.
+na středoevropského času na čas východoevropský byla uskutečněna ve 2 -> na středocvropského Rasu na čas východocuropský byla uskutečněna ve ž
+epoch 60 loss: 0.001365217293961905 acc: 0.9432530478739221
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:16
+Setrval s námi v družné zábavě až do 4 -> Setrval s námi v družné zábavě až do 4
+tudy. Říkám mu, že dělostřelectvo je zastřeleno na cestu po které jsem šel -> tudy. Říkám mu, že dělostřelectvo je zastřeleno na ceslu po které jsem šel
+Podzimní počasí bylo pěkné ale od polovice října byly mrazíky a mlha. Nepršelo -> Podrini počasí bylo pěkné ale od polovice října byly mrazíky a mlho. Nepršelo
+marmeládou a hlavně každý den za 2 kopejky rozinek -> marmeládou a hlavně každý den Za 2 kopejky rozinek
+Jednak škola připravila kulturní programy -> Jeodnck škula připravla kulturní progravny
+epoch 61 loss: 0.0014519590795971453 acc: 0.9423966696402022
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:35
+a pracuje svědomitě. Ruskému jazyku vyu- -> a pracuje svědomitě. Ruskému jazyku vyu-
+jako křen z Malina, osrdim otřese. -> jako křen z Malina, osrdim otřese.
+ustanovení 2 můži kteří budou obstarávat topivo pro kuchyni. -> ustanovení 2 můži kteří budou obstarávat topivo prokuchyň
+karamády a své přátele, -> karamády a své přátele,
+velmi pěkně usadili. Bohužel, na velmi -> velmi pěkně usadili. Bohužel, na velmi
+epoch 62 loss: 0.0010234555777860806 acc: 0.9433719892952721
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:14
+tům v národních výborech a ve společenských organizacích plnit toto usne- -> tům v národních výborech a ve společenských organizačich plnit toto usne-
+se vyspali. Moc teplo nám nebylo, ale spali jsme oblečení a obutí -> se vyspali; Moc teplo nám nebylo, ale spali jsme oblečení a obati
+dobu na cestě se tedy „zpozdily" o 60 min. Změna času v sousedních stá- -> dobu na cesté se tedy „zpozděly“ o 60 min. Změna času v sousedurch sté-
+a ruský člověk naříkal, že ty otřesy mu dělají velké bolesti -> a ruský člověk naříkal, že ty otřesy mu dělají velké bolesti
+záda nás chladilo a tak jsme se museli obracet. Boty jsme měli -> záda nás chladilo. a tak jsme se museli obracet. Boty jsme měli
+epoch 63 loss: 0.0008305943503510207 acc: 0.944216473386857
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:13
+dobývání řepy a sbírání brambor u -> dobývání řepy a sbírání brambor u
+296 zaměstnanci. Bylo podáno 93 zlepšovací návr- -> 296 zaměstnanci. Bylo podáno 93 zlepšovací návr-
+Při příležitosti prohlídky byli žáci 2. roč. očko- -> Při přsležitosti prohlídky byli žáci 2. roč. očko-
+sení v každodenní politické práci. -> sení v každodenní politické práci.
+Naše síla byla a je v mravní úrovni národa. -> Naše síla byla a je v mravní úrovni národa.
+epoch 64 loss: 0.0007704389347927645 acc: 0.9424561403508772
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:35
+to okamžitě zpět, táhnouce těžké koše a -> to okamžitě zpět, táhnouce těžké koše a -
+Také Tobě přeji plný pytel zdraví a vše co sníš -> Také Tobě přeji plný pytel zdraví a vše o sníš
+sadem. V sadě stál pomník generála Kaufmanna, -> sadem. Vsadě stál pomník generála Kanfmamna,
+Čím srdce čím jsi zhřešilo -> tím srdce čím jsi zhřešilo-
+Není žadné děvče věrné -> Není žadné děvče věrné
+epoch 65 loss: 0.0008603596050525084 acc: 0.943348201011002
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:13
+Sevřelo slunečko jasne zraky -> Sevmšlo slunečko jasne zraky
+Ten odvezl ho do své chyšky, -> Ten odvezl ko do své chyšky,
+předcházelo projednání ve skupinách, které ve- -> předelázeto projeidnaní ve skupinách, které e-
+ranou z pušky. Že se při tom sud jen jed- -> ranou z pušky. Ze se při tom sud jen jed-
+plné a tak jsem je pojídal od rána do večera. Potom až byly -> plné a tak jsem je pojídal od rána do večera. Polom až bylý
+epoch 66 loss: 0.0011736406019190327 acc: 0.9450728516205769
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:13
+ustavičná myšlenka, ale bál jsem se o tom s Milotou mluvit, -> ustavičná myslenka, ale bál jsem se o hom s Milotou mluviti
+ňovali jsme naše útroby, ničeho za tu -> ňovali jsme naše útroby, ničeho za tu
+ky. Ležel jsem tedy bez pláště schoulen -> ky. Ležel jsem tedy bez pláště schoulen
+na ty přijde až na posled. Žádal o mě -> ná ty přijde až na posled. Žádal o mě
+Dozvěděl jsem se, že šéf Dr Haas dostal dopis -> Dozvěděl jsem se, že šef Dr Haas dostal dopis
+epoch 67 loss: 0.0010404620842309668 acc: 0.9425037169194171
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:15
+věděli jak jsme žili a pracovali, jak naše -> věděli jak jsme žili a pracovali, jak naše
+zpěv jeho vábíl uši -> zpěv jeho vábíl uši
+předem věděli, do jakého pekla nás to ženou. -> předem věděli, do jakého pekla nás to ženou
+však zprávy nás velice pobourili když jsme se dozvěděli a německé noviny -> všek zprázy nás velice pobouzili když jsme se dozvěděli a německé noviny
+že jsme dovedli zajatce a na toto potvrzení jsme dostali každý pořádnou -> že jsme dovedli zajatce a na toto potvrzení jsme dostali každý hořádno.
+epoch 68 loss: 0.0010468323708046228 acc: 0.9427297056199822
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:13
+kolem něhož ti, kteří nebyli spiti do němo- -> kolem něhož ti, kteří nebyli spiti do němo
+Ital již pokoj a proto jsme se mohli zase -> Ital již pokoj a proto jsme se mohli zase
+údolí a znemožnit ústupu hlavní ruské stráže a jejich vysunutých -> údolí a znemožnit ústupu hlavní ruské stráže a jejich vysunutyc
+Zahájeno bylo starostou obce, přítomné a hosty poté -> Zahájeno bylo starostou obce, přítomné a hosty poté
+přijeli k naší parní lodici a chtěli na mne vody, já jsem -> přejeli knaži perní loděcí a chtěli na mne vody, já jsm
+epoch 69 loss: 0.0012015658110613003 acc: 0.9451798988997918
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:13
+od velitele. Pak jsme měli celé odpoledne prázdno, neboť -> d velitele. Pok jsme měli celé ozdpoledne prázdnou ebsl
+me si hrát, učit se a zpívat na schů- -> me si hrát, učit se a zpívat na schů-
+byl v ulicích proházen do výše 1 1/2 metru. Pak se jeli do Syzráně a -> byl v ulicích proházen do vyše 1/2 mětru. Pak se jelo do Slyzráně a
+toho vždy se varuj. -> toho vždy se varuj.
+bije - naše je to a člověk to cítí jako přátelskou ruku na rameně. -> bije - naše je to a člověk to cítí jako přátelskou ruku na rameně.
+epoch 70 loss: 0.0008566414063097909 acc: 0.9447160273565269
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:16
+Otce. Den ten je pro ně dnem všedním. -> Otce. Den ten je pro ně dnem všedním.
+si vydělal a Inž. že se mohl nahoře vytáhnout se sucharami -> si vydělal a Inž. že se mohl nahoře vytáhnout se sucharami
+abychom vystoupili. Skočívše z vozu nevěděli jsme -> abychom vystoupili. Lkočívše z vozu nevěděli jsme
+Setrval s námi v družné zábavě až do 4 -> Setrval s námi v družné zábavě až do 4
+stálo nahromaděno asi 300 vozů rozmanitého vozatajstva. Chtěli -> stálo nahromaděno asi 300 vozů rozmanitého vozalajstva. CAhlili
+epoch 71 loss: 0.0007626276629744097 acc: 0.9437882842699971
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:13
+věterkové hrály, přeškoda -> větaskové hrály, přeškoda
+že jsme dovedli zajatce a na toto potvrzení jsme dostali každý pořádnou -> že jsme dovedli zajatce a na toto potvrzení jsme dostali každýhořádno.
+a člověk neví, hlavu svěsí: -> a člověkneví, hlavu pvěsí:
+je velmi podezřelé a zdá se, že se o jeho -> je velmi podeyřelí a zdá se, že se o jeho
+tanově síni všickni naší poslancí a výkvět národa, spisovatelé a výtvarní -> tanově síní všickni naší poslancí a výkvět národa, spisovatelé a výtvarní
+epoch 72 loss: 0.0007829407366807573 acc: 0.9451680047576568
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:13
+vyhladovělé, zavšivené - nemocné. To už řádila v lagru epidemie -> vyhladovělé, zavšivené - nemocné. To už řádila v agru Cpidemic
+Těžce loučím se dne 3. října s -> Kžce loučím se dne 3. října s
+a to nejen v zákopech, ale i v reservách. -> a to nejen v zákopech, ale i v reservách.
+cích v dílnách. Jeho cílem bylo -> cích v dílnách. Jeho cílem bylo
+a po proslovu br. Maliny odcházíme -> a po proslovu br. Maliny odcházíme
+epoch 73 loss: 0.0007844227313762531 acc: 0.9456080880166517
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:14
+Domem pionýrů a mládeže v Netolicích, kde jedna -> Domem pioýrů a mládeže V Utolicích, kde jedm
+do lágru a před lágrem to bylo skoro stejné jako u nás. Parčík -> do lágrpřed lágrem to bylo skoro stujné jako u nás. Parčík
+bytový, matriky), dělník u okres. průmyslového -> bytový, maliky), dělníko u okres. průmyslového
+ním prohrajem, sakra, já bych plakal! -> ním proprajem, sakra, já bych planal
+R. Soukupem), řadu let vedl místní Kampeličku, -> R. Soukupem), řadu let vedl místní Kampeličku,
+epoch 74 loss: 0.0005752958310768008 acc: 0.9463693131132918
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:14
+Poněvadž mnoho bratří ryb nesnášelo, -> Poněvadž mnoho bhatří ryb nesnášel,
+odchází celý 4. prapor za nadšeného -> odchází celý 4. prapor za nadšeného
+předem věděli, do jakého pekla nás to ženou. -> předem věděli, do jakého pekla nás to ženou
+Domnívali se, že však neskončí s úspěchem. -> Domnívali se, že však neskoučí s úspěchem.
+Teď teprve nastala zábava; každá dívka si -> Teď tee nastalk zátna, Naže a dívka ci
+epoch 75 loss: 0.0005544667892972939 acc: 0.9454534641688969
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:16
+a zpět ještě na Tvé místečko, a v poledne jsem byl zpět, to ->  jpět ještě ne Tvé místečko, a v poledne jsem byl spěh, To
+se zase útočilo a šlo dopředu. Útok byl velmi namáhavý přišli jsme -> se zase útočilo a šlo dopředu. Utok byl velmi namáhavý přišli jsme
+naléla vřelá voda. Pak se do polévky nakrájel kus chleba a byla -> natélo vůlá voda. Pak se do polévky nakrájel kus chleba a byla
+Také jsme v prosinci připravili Besídku -> Také jsme v provinci připravili Besíchka
+prokázat,že má povolení. My jsme sice měli od fíry stacion -> prokázat, že má povolení. My jsme sice měli od spry stacionu
+epoch 76 loss: 0.0005192334299790673 acc: 0.9456556645851918
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:16
+tům v národních výborech a ve společenských organizacích plnit toto usne- -> tům v národních výborech a ve společenských organizačich plnit toto usne-
+i v dívné kouzlo čarné luhy -> i v dívně kouzlo čarné luhy
+našeho oblíbeného listu „Lidový deník“ jsme častokrát se dozvěděli pravdy. Tak -> našeho oblíbeného listu. Ledory deník jsme častokrát se dozvědeli pravdy. Tak
+V rámci 17. ročníku mezinárodní rozhlasové soutěže mladých hudebníků „Concerti- -> V rámci 17. ročníku mezinárodní rozhlasové soutěže mladých hudebníků „Coucerti-
+tříčkovali jsme s Němkami i Maďarka- -> tříčkovali jsme Němkami i Maďarka-
+epoch 77 loss: 0.0006097676719073206 acc: 0.9447398156407969
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:23
+a povídám si co to jenom može být. On na mne volá: Franc našol -> a povídám si co to jenom měže být On na mnevolá: Franc našol
+Za krásného a klidného večera -> Za krásného a klidného večena
+a s ním luny skvění -> a sním luny skvění
+důstojníkem mě ve spánku přepadne, -> důstojníkm mě ve spánku přepadne,
+hnutí.“ Je to krásný památník našich -> knui. Je to krávý povmátkék našich
+epoch 78 loss: 0.0006472298496519216 acc: 0.9454653583110318
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:19
+již skoro měsíc. Za tu dobu jsme se neměli kdo umýt jen sněhem, -> již skoro měsíc. Za tu dobu jsme se neměli kdo umýt jen sněhem.
+u silnice a pod ním navezen návoz. -> u sirnice a pod ním navezen návoy.
+le a byl pak dlouho bez zaměstnání. 1930-1935 -> le a byl pak dlouho bez zaměstnání. 1930-1935
+V roce 1952 byly objeveny v domě čp. 15 -> V roce 1952 byly objeveny v domě čp. 5
+ce. Tuto službu obstarávali většinou ještě -> ce. Tuto službu obstarávali většinou ještě
+epoch 79 loss: 0.0005912299830815755 acc: 0.9445614035087719
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:16
+Dne téhož večer, t. j. 14. dubna 1917 v 1/2 -> De téhož večer, t. j. 14 dubna 1917, v 1/2-
+hnutí.“ Je to krásný památník našich -> knui.“ Je to krávý povnátkék našich
+a ponižujícími nadávkami. Činí tak -> a ponižujícími nadávkami. Činí tak
+Také jsme jeli jednu sobotu do Pra- -> Také jsme jeli jedu sototu do Pra-
+Budovatelské úsilí našeho lidu vyžaduje, aby -> Budovatelské úilí našeho lidu vyžaduje, aby
+epoch 80 loss: 0.0005409846357651986 acc: 0.9432054713053821
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:13
+ly velkolepé národní projevy. Shromáždili se totiž v obecním domě ve Sme- -> ly velkolepné národní projeny. S hromážetili se totiž v obecním domě ve Sme-
+k nám do tábora nyní přiděleno ně- -> k nám do tábora nyní přidělena ně-
+va Selková za bývalého ředitele školy s. Čer- -> na Selková za ývalého ředitele školy s. Čer-
+plotnu a tak jen to praskalo. Kteří vojáci měli chlupaté prsa tak -> plotnu a tak jem to praskalo. Kteří vojaci měli chlupate prsa tak
+A když pak na něm utkvělo -> A když pak na něm utkvělo
+epoch 81 loss: 0.0004440652838093229 acc: 0.943871543264942
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:14
+době líhnutí pro veliká mokra v jarních měsících. Také stavu koroptví ubylo -> době léhnuté pro veliká mokra v jarních měsících. Také stavu koropftevé ubylo
+Tys se na mě zamračila -> Tys se na mě zamračila-
+Začali jsme si představovat, že nás Srbové pronásledují. To už stáli -> Začali jsme si představovat, že náš Srbová pronásledují. To už stáli
+né plnění úkolů ve 3. čtvrtletí 1962. -> né plněí úkolů ve 3. čturtletí 1962.
+nehodílo) O 10. hod. přišel ke mně p. Tesař a -> nelodilo) 6 1 8 hod. sišel ke mně p. Tosař
+epoch 82 loss: 0.00042761883209459483 acc: 0.9447636039250669
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:14
+ci v Rakousku? Doklady jsou tu uvedeny -> ci v Rakousku? Doklady jsou tu uvedeny
+žováním strach a hrůzu všeho lidu. Večer zhromáždilo se na vesnici mnoho lidu a za -> žováním strach a hrůzu všeho lidu. Veier zhromázdlo se na vesnici mnoho lidu a za
+dobrota mu z očí plá, -> dobrota mu zvří plá,
+a žáci získávali za své přičiněné odměny. -> a žási ziskávali za sné přčiněsi odminy.
+Také jsme jeli jednu sobotu do Pra- -> Také jsme jeli jedu sototu do Pra-
+epoch 83 loss: 0.00042629639705410227 acc: 0.944323520666072
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:22
+na kamenu děva uplakaná -> na kamenu děva uplakaná
+nařízení se nedodržovaly. A kdo ví, jak -> nařízené se nedodržovaly. A kdo ví, jak
+nedostak ve výzbroji a také pušek nemělo dostatek. Pomyslel jsem si ti kdyby -> nedostak ve výzbroji a také pušek nemělo dostatek. Pomyslel jsem si ti kdyby
+den, pak přicházeli i mimo a zajímali -> den, pak přicházeli i mimo a Bajímali
+kvery musí fackovat, -> kvery musí fackovat,
+epoch 84 loss: 0.00044857142533874137 acc: 0.943728813559322
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:16
+věterkové hrály, přeškoda -> větaskové hrály, přeškoda
+koncem října OSP z Vimperka provádět vý- -> koncem října OSPa Vimperka provádět vý-
+a vinula jsi se ke mě ůže -> a vinula jsi se ke mě ůže
+hlášení, aby nám vydali kávu, cukr, chleba a konservy. Byli jsme -> hlášení, aby nám vydali, kávu, cukr, chleba a konservy. Byli jsme
+řeky Čirčik proti proudu do II lágru který byl vzdálen 6 km. -> řeky Čirčik proti proudu do II lágru který byl vzdálen 6ků
+epoch 85 loss: 0.0005605728447553702 acc: 0.9451561106155218
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:40
+le a byl pak dlouho bez zaměstnání. 1930-1935 -> le a byl pak dlouho bez zaměstnání. 930-1935
+zimě 6 - 20 hod. Prodáno bylo 2,032.606 l benzínu Spe- -> zimě 6- 20 hod. Prodáno bylo 2,032.606l bruzínu Spe-
+frontě vydrželi plných 22 měsíců, připíná- -> frontě vydrželi plných 22 měsíců, připíná-
+Byl připřáhnut s koněm Zezulovým do jeho vozu a odejel i jeho čeledí- -> Byl připřáhnut s koněm Lezulovým do jeho vozu a odejel i jeho čeledí-
+ni při zdravém rozumu připraveni -> ni při zdravém rozumu připraveni
+epoch 86 loss: 0.0005623611183837057 acc: 0.9455367231638419
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:21
+horách jsou celé oddíly utečenců a že tvoří takzvané zelené kádry. Také četnicí tyto už tak -> horách jsou celé odíly utečenců a že tvoří takzvané zelené kádry. Také četnicí tyto už tak
+každý toužil po „New-Orleans-u“. -> každý toužil po „kew - Orleanou“.
+k tomu byla obava, že by to bylo ke škodě sborové -> k tomu byla obava, že by to bylo ke škodě sborové
+čí, že zmrznou již pěkně vzrostlé ozimy. Před 10. lednem -> čí, že zmrznou již pěkně vzrostlé ozimy. Před 10. lednem
+pobytu v idylickém zákoutí lemovaném -> pobytu v idylickém zákoutí lemovaném
+epoch 87 loss: 0.0004895357607747428 acc: 0.9448944394885519
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:34
+nenamáhal, on do našeho kolektivu svou kousavou -> nenamá hal, on do našeho kolektivu svou kousavou
+rozzářených očí neviděl jsem od začátku -> rozzářených očí neviděl jsem od začátku-
+je považujeme také za lidi, čili krátce, že -> je považujeme také za lidi, čili krátce, že
+účastek. V údolí bylo asi 9 dřevěných domů které byli obydleny -> účastek. V údolí bylo asi 9 dřevěných domů které byli obydleny
+1 do prům. školy strojnické, 1 do prům. ško- -> 1do prům. školy strojniché, 1 do prům. što-
+epoch 88 loss: 0.0004004161325865425 acc: 0.943835860838537
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:13
+byl jeho otec lesním dělníkem. Vyučil se ma- -> byl jeho otec lesním dělníkcem. Vyučil se ma-
+kdy nám co k večeří daš? -> kdy nám co k večeří daš?
+teď nemá mne kdo miti rád. -> todď nemá mne bkdo miti cád.
+28. listopadu zajelo do Čes. Krumlova Jihočes. -> 28. jistopadu zajelo do Čs. Krumlova Jihočes.
+Řady řídnou, padavky odpadávají od -> Rady řídnou, padavky odpadávají od
+epoch 89 loss: 0.0003715340647031553 acc: 0.943812072554267
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:15
+a postavil to za koně. Kůň se na fidlatka podíval a začal se -> a postavil to za koně. Kůň se na fidlatka podíval a začal se
+co bylo vše platné, disciplína byla na naší lodi -> co bylo še platné, disciplůna byla na naší lodí
+Celkem má škola 17 hochů a 14 dívek = 31 dětí. -> Celkem má škola 17 hochů 14dívek. 31 dětí.
+Byl to tragický případ. Jak jest nutné být opatrný hlavně na děti a vzláště jezdící -> Byl to tragický případ. Jak jest nutné být opatrný hlavmě na děti a vzlátě jezdní
+sokolském a od dvou sokolů a pak na všecky -> sokolském a od dvou sokolůa pak na všecky
+epoch 90 loss: 0.00034482276800554246 acc: 0.944133214391912
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:12
+z nás ani krejcar platiti vstupné a sokolové nás vedli na -> z nás ani kuja platicí vstupné a sokolové nás vedli na
+Celý den jsme topili oba dvě kotly, poněvadž -> Celý den jsme topili oba dva kotly, poněvadž
+bratří, kteří se na ně nemohli ani -> bratří, kteří se na ně nemohli oni
+každý den musím od 10-11 1/2 držet s ními školu, -> každý den musím od 10 - 1/2 držet s ními školu,
+k tomu byla obava, že by to bylo ke škodě sborové -> k tomu byla obava, že by to bylo ke škodě sborové
+epoch 91 loss: 0.00033693267332273537 acc: 0.944287838239667
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:13
+který jsme dostali na vánoce od německého červeného kříže v Lodži. -> který jsme dostali na vánoce od německého červeného kříže v Lodži.
+jako když v dálce kdesi plkají strojní puš- -> jako když v dálce kdesi plkají stojní puš-
+jsem si za vydělané peníze nové kalhoty a hezkou červenou hedvábnou -> jsmí si za vydělané peníze nové kalhoty a hrkou červenou hedbáhnou
+17. prosince bylo zasedání plena Mě. N. V. Netolice v zasedací síni v radnici. -> 14. prosince bylo zasedání plena Mě. N. V. Netolice v zasedací súni v radnici.
+kovcová, ve 2. tř. nár. šk. Vítězslava -> koocová, ve 2. tě. nár. šk. Vítězslava
+epoch 92 loss: 0.00031466177431866527 acc: 0.943895331549212
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:16
+veno. Odpoledne v 14 hod. byla přehlídka oděvů v předvedení modelů a po té tombola. -> veno. Ospolede v 14 hod. byla přehlídka oděvů v předvedení modelů a po té tombola.
+bývalé žákyni zdejší školy. Marie Ře- -> bývalé žákyni zdejší školy. Marie Ře-
+povinnosti budoucího strážce vlasti, -> poninnosti budoucího strážce blasti,
+za odbor školství O. N. V. Prachatice předal čestná uznání ku 20 výročí osvobození -> za ocebor školotví O. N. V. Prachatice předal čestná uznání ku 20 výročí osvobozrení
+O štěstí! lásko jen blíž jen blíž, -> O štěstí! lásko jen blíž jen blíž,
+epoch 93 loss: 0.00032497808392508885 acc: 0.9450371691941719
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:22
+Krušné byly chvíle až do 1/2 12 ho- -> Krušné byly chvíle až do 1/2 1/2ho-
+Pracující n. p. Lira se připojili k těm kolektivům, které chtějí co nejvíce -> Pracující u p. hira sl připojili k tém kolektivům, které chtějí co nejvíce
+zdůrazněn význam únorových událostí -> zdůrazněn význam únorových událostí
+ry, které nám legionáři opatřili. Hrdě -> ry, které nám legionáři opatřili. Hrdě
+roce 98 zažijem a zažít musíme. V 8 hod jsem -> rou 9O8 zařijem a zazít musíme. V 8 hod jsem
+epoch 94 loss: 0.00028545151351136157 acc: 0.9455367231638419
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:13
+Pepouškovi namázni nosík hlavně uvnitř lojem (kup si ho tabulku u -> Pepouškovi namázninošík hlavné uvnitě bojerm (kuji si to takulku e
+směli zúčastnit představení. O dvou hod jsme šli z lodě a -> směli súčastnit představení. O dvou hod jsme šl4 v lodě a
+Proslýchá se, že všichni zajatí Čechoslo- -> Proslýchá se, že všichni zajatí Čechoslo-
+t. j. 1 kg za 68 Kč, ne snad příliš dobrého, skle- -> t. j. 1kg za 68 Kě, ne snad příliš dobrého, skle-
+loď, jak vztýčila vlajku neštěstí, my zarazili -> lďž, jek vstýčela vlejku nueštliki, my raravili
+epoch 95 loss: 0.0003520052738022059 acc: 0.9452393696104668
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:15
+jsme do svého tábora, ne však již jako -> jsme do svého tábora, ne však již jako
+XI. Co jich tu před námi bylo, -> XI. Co jich tu před námi bylo,
+každý den musím od 10-11 1/2 držet s ními školu, -> každý den musím od 10 - 1/2 držet s ními školu,
+ny. Také se vyskytlo i několik případů příušnic. -> ny. Také se vysbytlo i několik připadu příušnic.
+Dohodli jsme se, že si obstaráme větší počet pohledních lístků. -> Dohodli jsme se, že si obstaráme větší počet pohledních lístků.
+epoch 96 loss: 0.000283710815012455 acc: 0.9443354148082069
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:16
+se nemohl narovnat. Vše jim vyprá- -> se nemohl narovnat. Vše jim vyprá-
+na něho. On klidně: Boga mi neznam. Ti chlapi nejsou nervosní. -> na něho. On klidně: Boga mi neznam. Ti chlapi nejsou nezvosní.
+srdce a končí tuto bídu střelou. Byli to ten- -> srdce a končí tuto bídu střelm. Byli to ten-
+před majora Böhma. Výsledek? Hlídka byla -> před majora Bohma. Výsledek? Hlídka byla-
+velitel technické roty do řijna nyní asi 3 týdny velitel praporu -> velitel technické roty do řijná nyni asi 3 týdny veliteb praporu
+epoch 97 loss: 0.00030792895358172244 acc: 0.9450966399048468
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:16
+4.) Vorgang bei Schlissen und Füllen der Kessel? -> 7.) Vorgangbei Schlisen und Fříhu da Kessel?
+Byly tam zahrnuty 3 schůze pléna -> Byly tam zakrmety 3 schůze pléna
+teď nemá mne kdo miti rád. -> todď nemá mne kdo miti cád.
+že asi za 14 dní do práce nastoupíme. Druhý den se přihlasilo -> že asi za 14 dní do práce nastoupíme. Druhý den se přílelasilo
+Josef Chvála z Prachatic. Výstava těchto samouků byla do 14. října. -> Josef Chvála z Prachatic. Výstava těchto samouků byla do24 řijna.
+epoch 98 loss: 0.00034688078064937147 acc: 0.943978590544157
+training ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:02:15
+Postujte vy hvězdy bílé, -> Tostujte vy hvězdy bílé,
+telé 17, na úpravě okolí školy žáci -> telé 17, na úpravě okolí školy žáci
+nemáme špulkové niti. Já jsem měl 1 velkou špulku bílých nití. -> nemáme šprulkové niti. Já jsem měl 1 velkou špulku bílých nstí.
+ka bratry z večera ve vinárně u „Sla- -> ka bratry z večera ve vinárně u „Sla-
+a na výroční schůzi Svazu požární ochrany (SPO) -> a na výroční schůzi Svazu požární ochrany (SPO)
+epoch 99 loss: 0.00035954632464563473 acc: 0.943895331549212
